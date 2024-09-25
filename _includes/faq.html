@@ -1,0 +1,59 @@
+<section class="section-padding">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="section-title left-align wow fadeInUp">
+                    <p class="subtitle"><i class="fal fa-book"></i>{{ site.data.ui.faq.subtitle }}</p>
+                    <h3 class="title">{{ site.data.ui.faq.title }}</h3>
+                    <p>{{ site.data.ui.faq.description }}</p>
+                </div>
+
+                <div class="multi_progress_bar mb-xl-30 mb-md-80 wow fadeInDown">
+                    <div class="progress_box">
+                        <div class="circle_bar" data-percent="89" data-track-color="#ecf2ff" data-bar-color="#4b83fb" data-size="80">
+                            <div class="counter transform-center text-center">
+                                <b data-from="0" data-to="89"> 0 </b>
+                            </div>
+                        </div>
+
+                        <div class="text">
+                            <h5 class="mb-0">{{ site.data.ui.faq.result }}</h5>
+                        </div>
+                    </div>
+
+                    <div class="progress_box">
+                        <div class="circle_bar" data-percent="96" data-track-color="#ecf2ff" data-bar-color="#65cfa9" data-size="80">
+                            <div class="counter transform-center text-center">
+                                <b data-from="0" data-to="96"> 0 </b>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h5 class="mb-0">{{ site.data.ui.faq.advisor }}</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="accordion accordion-style mb-xl-30 wow fadeInDown" id="accordion">
+                    {% for faq in site.data.ui.faqs limit: 4 %}
+                    {% comment %} Start faq. Block {% endcomment %}
+                    <div class="card">
+                        <div class="card-header">
+                            <button class="btn btn-link {%- if forloop.first == false -%} {{ ' collapsed'}} {%- endif -%}" type="button" data-toggle="collapse" data-target="#Item{{forloop.index}}" aria-expanded="true" aria-controls="Item{{forloop.index}}">
+                                {{ faq.ask }}
+                            </button>
+                        </div>
+                        <div id="Item{{forloop.index}}" class="collapse {%- if forloop.first -%} {{ ' show'}} {%- endif -%}" aria-labelledby="Item{{forloop.index}}" data-parent="#accordion">
+                            <div class="card-body">
+                                {{ faq.answer }}
+                            </div>
+                        </div>
+                    </div>
+                    {% comment %} End faq. Block {% endcomment %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

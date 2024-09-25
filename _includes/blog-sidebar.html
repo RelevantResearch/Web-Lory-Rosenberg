@@ -1,0 +1,33 @@
+<div class="sidebar style_2">
+    <div class="sidebar_widget wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+        <h5 class="widget_title">Category</h5>
+        <ul class="category_widgets">
+            {% for category in site.categories %}
+            {% capture category_name %}{{ category | first }}{% endcapture %}
+            <li>
+                <a href="/categories/{{ category_name | slugify: 'pretty' }}">{{ category_name }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="sidebar_widget recent_widgets wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+        <h5 class="widget_title">Latest News</h5>
+        <ul>
+            {%- for post in site.posts limit: 5 -%}
+            <li>
+                <div class="image">
+                    <img src="{{post.image | relative_url }}" alt="{{post.title}}" class="image-fit">
+                </div>
+                <div class="text">
+                    <h6 class="mb-0">
+                        <a href="{{post.url}}">{{post.title}}</a>
+                    </h6>
+                    <p class="mb-0"><strong><i class="fal fa-calendar-alt"></i> </strong>
+                        <a href="{{post.url}}">{{ post.date | date_to_string }}</a>
+                    </p>
+                </div>
+            </li>
+            {%- endfor -%}
+        </ul>
+    </div>
+</div>

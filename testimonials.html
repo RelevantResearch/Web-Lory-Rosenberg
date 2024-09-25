@@ -1,0 +1,88 @@
+---
+layout: page
+title: Testimonials
+description: ''
+tags: []
+---
+
+{% comment %} Start aside_bar {% endcomment %}
+{% include aside_bar.html %}
+{% comment %} End aside_bar {% endcomment %}
+
+<div class="aside-overlay trigger-left">
+</div>
+
+{% comment %} Start header3 {% endcomment %}
+{% include header3.html %}
+{% comment %} End header3 {% endcomment %}
+
+{% comment %} Start subheader2 {% endcomment %}
+{% include subheader2.html %}
+{% comment %} End subheader2 {% endcomment %}
+
+<section class="section-padding relative z-1">
+    <div class="container">
+        <div class="row">
+            {% for testimonial in site.data.ui.testimonials %}
+            {% comment %} Start testimonial. Block {% endcomment %}
+            <div class="col-lg-4 col-md-6">
+
+                <div class="testimonial_item normal wow fadeInUp" data-wow-delay=".10ms">
+                    <div class="author">
+                        <div class="image bg-thm-color-two">
+                            <img src="{{ testimonial.author_image }}" alt="img" class="image-fit">
+                        </div>
+
+                        <div class="text">
+                            <h6 class="mb-0">
+                                {{ testimonial.author_name }}
+                            </h6>
+                            <p class="mb-0 font-weight-bold thm-color-two">
+                                {{ testimonial.author_position }}
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="comment">
+                        {{ testimonial.quotes }}
+                    </p>
+
+                    <div class="ratings">
+                        <i class="fal fa-star {%- if testimonial.rating >= 1 -%} {{' active'}} {%- endif -%}"></i>
+                        <i class="fal fa-star  {%- if testimonial.rating >= 2 -%} {{' active'}} {%- endif -%}"></i>
+                        <i class="fal fa-star  {%- if testimonial.rating >= 3 -%} {{' active'}} {%- endif -%}"></i>
+                        <i class="fal fa-star  {%- if testimonial.rating >= 4 -%} {{' active'}} {%- endif -%}"></i>
+                        <i class="fal fa-star {%- if testimonial.rating >= 5 -%} {{' active'}} {%- endif -%}"></i>
+                    </div>
+                </div>
+            </div>
+            {% comment %} End testimonial. Block {% endcomment %}
+            {% endfor %}
+        </div>
+
+    </div>
+
+    <div class="circle_wave">
+    </div>
+
+</section>
+
+{% comment %} Start plane {% endcomment %}
+{% include plane.html %}
+{% comment %} End plane {% endcomment %}
+
+{% comment %} Start testimonial2 {% endcomment %}
+{% include testimonial4.html %}
+{% comment %} End testimonial2 {% endcomment %}
+
+{% comment %} Start testimonial2 {% endcomment %}
+{% include testimonial2.html %}
+{% comment %} End testimonial2 {% endcomment %}
+
+{% comment %} Start cta3 {% endcomment %}
+{% include cta2.html %}
+{% comment %} End cta3 {% endcomment %}
+
+{% comment %} Start footer3 {% endcomment %}
+{% include footer3.html %}
+{% comment %} End footer3 {% endcomment %}

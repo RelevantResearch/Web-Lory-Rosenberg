@@ -1,0 +1,37 @@
+<aside class="aside_bar aside_bar_right aside_canvas">
+    <a href="{{'/' | relative_url }}" class="logo pl-0">
+        <img src="{{ site.data.ui.site.logo }}" alt="logo" />
+    </a>
+    <p>{{site.data.ui.site.description}}</p>
+    <div class="sidebar">
+        <div class="sidebar_widget recent_widgets">
+            <h5 class="widget_title">
+                Popular Courses
+            </h5>
+            <ul>
+                {%- for item in site.data.ui.coaches -%}
+                <li>
+                    <div class="image">
+                        <img src="{{item.image | relative_url }}" alt="img" class="image-fit" />
+                    </div>
+                    <div class="text">
+                        <h6 class="mb-0">
+                            <a href="{{item.url  | default: '#'}}">
+                                {{item.title }}
+                            </a>
+                        </h6>
+                        <p class="mb-0">
+                            <strong>
+                                By
+                            </strong>
+                            <a href="{{item.url | default: '#'}}">
+                                {{item.autor | default : 'John Foerster' }}
+                            </a>
+                        </p>
+                    </div>
+                </li>
+                {%- endfor -%}
+            </ul>
+        </div>
+    </div>
+</aside>

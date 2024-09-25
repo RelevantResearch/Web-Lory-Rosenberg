@@ -1,0 +1,13 @@
+<div class="section-padding">
+    <div class="container">
+        <div class="row justify-content-around">
+            {% for sponsor in site.data.ui.sponsors %}
+            <div class="col-auto">
+                <div class="sponsors_img">
+                    <img src="{{ sponsor.image | relative_url }}" alt="img">
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

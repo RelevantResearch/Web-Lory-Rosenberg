@@ -1,0 +1,130 @@
+---
+layout: page
+title: Blog
+description: ''
+tags: []
+---
+
+{% comment %} Start aside_bar {% endcomment %}
+{% include aside_bar.html %}
+{% comment %} End aside_bar {% endcomment %}
+
+<div class="aside-overlay trigger-left">
+</div>
+
+{% comment %} Start header3 {% endcomment %}
+{% include header3.html  %}
+{% comment %} End header3 {% endcomment %}
+
+{% comment %} Start subheader2 {% endcomment %}
+{% include subheader2.html breadcrumb_active="Blog" %}
+{% comment %} End subheader2 {% endcomment %}
+
+<div class="section-padding">
+    <div class="container">
+        <div class="row blog-masonry">
+            {% for post in paginator.posts %}
+            <div class="col-xl-4 col-md-6 masonry-item">
+                <article class="post style_2 wow fadeInDown" data-wow-delay=".10ms">
+                    <div class="post_img">
+                        {%- if post.image -%}
+                        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="image-fit" />
+                        {%- endif -%}
+                    </div>
+                    <div class="post_caption">
+                        <ul class="post_meta">
+                            <li>
+                                <i class="fal fa-calendar-alt"></i>
+                                {{ post.date | date_to_string }}
+                            </li>
+                            {%- if post.author -%}
+                            <li>
+                                <i class="fal fa-comment-lines"></i>
+                                {{ post.author }}
+                            </li>
+                            {%- endif -%}
+                        </ul>
+                        <h4 class="post_title">
+                            <a href="{{ post.url }}">{{ post.title }}</a>
+                        </h4>
+                        <p class="post_text">
+                            {{ post.description }}
+                        </p>
+
+                        <a href="{{ post.url }}" class="thm-btn bg-thm-color-white thm-color-one btn-rectangle">
+                            Read More
+                            <i class="fal fa-chevron-right ml-2"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            {% endfor %}
+        </div>
+
+        {% if paginator.total_pages > 1 %}
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                {% if paginator.previous_page %}
+                <li class="page-item">
+                    <a href="{{ paginator.previous_page_path | relative_url }}" class="page-link">
+                        <i class="fal fa-chevron-left"></i>
+                    </a>
+                </li>
+                {%- else -%}
+                <li class="page-item">
+                    <a href="#" class="page-link disabled">
+                        <i class="fal fa-chevron-left"></i>
+                    </a>
+                </li>
+                {% endif %}
+
+                {% for page in (1..paginator.total_pages) %}
+                {% if page == paginator.page %}
+                <li class="page-item">
+                    <a href="#" class="page-link">
+                        {{ page }}
+                    </a>
+                </li>
+                {% elsif page == 1 %}
+                <li class="page-item active">
+                    <a href="/blog" class="page-link">
+                        {{ page }}
+                    </a>
+                </li>
+                {% endif %}
+                {%- else -%}
+                <li class="page-item">
+                    <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}" class="page-link">
+                        {{ page }}
+                    </a>
+                </li>
+                {% endfor %}
+
+                {% if paginator.next_page %}
+                <li class="page-item">
+                    <a href="{{ paginator.next_page_path | relative_url }}" class="page-link">
+                        <i class="fal fa-chevron-right"></i>
+                    </a>
+                </li>
+                {%- else -%}
+                <li class="page-item">
+                    <a href="#" class="page-link">
+                        <i class="fal fa-chevron-right"></i>
+                    </a>
+                </li>
+                {% endif %}
+            </ul>
+
+        </nav>
+        {% endif %}
+    </div>
+
+</div>
+
+{% comment %} Start cta3 {% endcomment %}
+{% include cta2.html %}
+{% comment %} End cta3 {% endcomment %}
+
+{% comment %} Start footer3 {% endcomment %}
+{% include footer3.html %}
+{% comment %} End footer3 {% endcomment %}

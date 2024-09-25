@@ -1,0 +1,72 @@
+---
+layout: page
+title: Blog List
+description: ''
+tags: []
+---
+
+{% comment %} Start aside_bar {% endcomment %}
+{% include aside_bar.html %}
+{% comment %} End aside_bar {% endcomment %}
+
+<div class="aside-overlay trigger-left"></div>
+
+{% comment %} Start header3 {% endcomment %}
+{% include header3.html %}
+{% comment %} End header3 {% endcomment %}
+
+{% comment %} Start subheader2 {% endcomment %}
+{% include subheader2.html %}
+{% comment %} End subheader2 {% endcomment %}
+
+<!-- Section Start -->
+<div class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mb-md-80">
+                {% for post in site.posts limit: 10 %}
+                <!-- post standard -->
+                <article class="post post_list style_2 wow fadeInDown">
+                    <div class="post_img">
+                        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="image-fit">
+                    </div>
+                    <div class="post_caption">
+                        <ul class="post_meta">
+                            {%- if post.author -%}
+                            <li>
+                                <i class="fal fa-comment-lines"></i>
+                                Author {{ post.author }}
+                            </li>
+                            {%- endif -%}
+                            <li>
+                                <i class="fal fa-calendar-alt"></i>
+                                {{ post.date | date_to_string }}
+                            </li>
+                        </ul>
+                        <h4 class="post_title">
+                            <a href="{{ post.url }}">{{ post.title }}</a>
+                        </h4>
+                        <p class="post_text">
+                            {{ post.description }}
+                        </p>
+                        <a href="{{ post.url }}" class="thm-btn bg-thm-color-white thm-color-one btn-rectangle">Read More <i class="fal fa-chevron-right ml-2"></i></a>
+                    </div>
+                </article>
+                <!-- post standard -->
+                {%- endfor -%}
+            </div>
+            <div class="col-lg-4">
+                {%- include blog-sidebar.html -%}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Section End -->
+   
+{% comment %} Start cta3 {% endcomment %}
+{% include cta2.html %}
+{% comment %} End cta3 {% endcomment %}
+
+{% comment %} Start footer3 {% endcomment %}
+{% include footer3.html %}
+{% comment %} End footer3 {% endcomment %}

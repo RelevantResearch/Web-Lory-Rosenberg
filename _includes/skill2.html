@@ -1,0 +1,157 @@
+<section class="section-padding side_bg" style="background-image: url('{{'assets/images/bg/bg_5.png' | relative_url }}');">
+    <div class="container">
+        <div class="section-padding pt-0">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-xl-6 col-lg-6 mb-md-80">
+                    <div class="section-title left-align wow fadeInDown">
+                        <p class="subtitle">
+                            <i class="fal fa-book"></i>
+                            {{ site.data.ui.skill.subtitle }}
+                        </p>
+
+                        <h3 class="title wow ">{{ site.data.ui.skill.title }}</h3>
+                        <p>{{ site.data.ui.skill.description }}</p>
+                        <a href="{{'about' | relative_url }}" class="thm-btn bg-thm-color-two thm-color-two-shadow btn-rectangle">
+                            Learn More
+                            <i class="fal fa-chevron-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-5">
+                    <div class="row feature-masonry">
+                        {% for skill in site.data.ui.skills %}
+                        <div class="col-sm-6 grid-item wow fadeInUp">
+                            <div class="progress_box grid">
+                                <div class="circle_bar" data-percent="{{ skill.count }}" data-track-color="#ecf2ff" data-bar-color="#4b83fb" data-size="80">
+                                    <div class="counter transform-center text-center">
+                                        <b data-from="0" data-to="{{ skill.count }}">0</b>
+                                    </div>
+                                </div>
+
+                                <div class="text">
+                                    <h5 class="mb-0">{{ skill.name }}</h5>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        <div class="col-sm-6 grid-item text-center">
+                            <img src="{{'assets/images/elements/transparent_shape.png' | relative_url }}" alt="icon" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="m-0" />
+    </div>
+
+    <div class="section-padding pb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="counter_box wow fadeInDown" data-wow-delay=".10ms">
+                        <div class="icon">
+                            <img src="assets/images/icons/icon_6.png" alt="icon" class="image-fit" />
+
+                        </div>
+
+                        <div class="text">
+                            <div class="counter">
+                                <b data-from="0" data-to="369">
+                                    0
+                                </b>
+
+                            </div>
+
+                            <p class="mb-0">
+                                Popular Coach
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="counter_box wow fadeInDown" data-wow-delay=".20ms">
+                        <div class="icon">
+                            <img src="assets/images/icons/icon_7.png" alt="icon" class="image-fit" />
+
+                        </div>
+
+                        <div class="text">
+                            <div class="counter">
+                                <b data-from="0" data-to="264">
+                                    0
+                                </b>
+
+                            </div>
+
+                            <p class="mb-0">
+                                Our Advisors
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="counter_box wow fadeInUp" data-wow-delay=".30ms">
+                        <div class="icon">
+                            <img src="assets/images/icons/icon_8.png" alt="icon" class="image-fit" />
+
+                        </div>
+
+                        <div class="text">
+                            <div class="counter">
+                                <b data-from="0" data-to="259">
+                                    0
+                                </b>
+
+                            </div>
+
+                            <p class="mb-0">
+                                Video Tutorials
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="counter_box wow fadeInDown" data-wow-delay=".40ms">
+                        <div class="icon">
+                            <img src="assets/images/icons/icon_9.png" alt="icon" class="image-fit" />
+
+                        </div>
+
+                        <div class="text">
+                            <div class="counter">
+                                <b data-from="0" data-to="568">
+                                    0
+                                </b>
+
+                            </div>
+
+                            <p class="mb-0">
+                                Student Reviews
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

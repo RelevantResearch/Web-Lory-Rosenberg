@@ -1,0 +1,57 @@
+<section class="section bg-thm-color-two-gradient z-1 newsletter_form_sec">
+    <img src="{{'assets/images/elements/element_1.png' | relative_url}}" class="element_1" alt="Element" />
+
+    <img src="{{'assets/images/elements/element_2.png' | relative_url}}" class="element_2" alt="Element" />
+
+    <div class="container relative z-1">
+        <div class="arrows to_right slideRight">
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+        </div>
+
+        <div class="arrows to_up slideTop">
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-xl-7 col-lg-8">
+                <div class="section-title mx-width-100 wow fadeInUp">
+                    <p class="subtitle"><i class="fal fa-book"></i>{{ site.data.ui.newsletter.subtitle }}</p>
+                    <h3 class="title">{{ site.data.ui.newsletter.title }}</h3>
+                </div>
+            </div>
+
+            <div class="col-xl-8">
+                <div class="newsletter_form wow fadeInDown" data-wow-delay=".3s">
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter Your Email" autocomplete="off" name="#" />
+
+                            <div class="input-group-append ml-0">
+                                <button type="submit" class="thm-btn bg-thm-color-three btn-rounded">{{ site.data.ui.newsletter.button }}</button>
+
+                            </div>
+
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="condition" name="condition" checked="checked" />
+
+                            <label class="custom-control-label" for="condition">
+                                Get Update Monthly Subscription
+                            </label>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

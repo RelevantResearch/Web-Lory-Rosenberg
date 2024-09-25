@@ -1,0 +1,48 @@
+<section class="section-padding">
+    <div class="container">
+        <div class="row">
+            {% for coache in site.data.ui.coaches %}
+            {% comment %} Start Block {% endcomment %}
+            <div class="col-xl-4 col-md-6">
+                <div class="coach_block wow fadeInUp" data-wow-delay=".10ms">
+                    <div class="coach_img">
+                        <img src="{{ coache.image | relative_url }}" alt="img" class="image-fit">
+                        <div class="coach_badges">
+                            <span class="tag_badge bg-thm-color-four">{{ coache.price }}</span>
+                        </div>
+                        <a href="{{ coache.url }}" class="thm-btn thm-color-two bg-thm-color-white thm-color-two-shadow btn-circle link">
+                            <i class="fal fa-chevron-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="coach_caption">
+                        <div class="coach_meta">
+                            <a href="#" class="coach_cat thm-btn bg-thm-color-three thm-color-three-shadow btn-rounded">
+                                {{ coache.category }}
+                            </a>
+                            <div class="ratings">
+                                <i class="fal fa-star {%- if coache.rating >= 1 -%} {{' active'}} {%- endif -%}"></i>
+                                <i class="fal fa-star  {%- if coache.rating >= 2 -%} {{' active'}} {%- endif -%}"></i>
+                                <i class="fal fa-star  {%- if coache.rating >= 3 -%} {{' active'}} {%- endif -%}"></i>
+                                <i class="fal fa-star  {%- if coache.rating >= 4 -%} {{' active'}} {%- endif -%}"></i>
+                                <i class="fal fa-star {%- if coache.rating >= 5 -%} {{' active'}} {%- endif -%}"></i>
+                            </div>
+                        </div>
+
+                        <h5 class="title mb-xl-20">
+                            <a href="{{ coache.url }}">{{ coache.title }}</a>
+                        </h5>
+                        <div class="author">
+                            <img src="{{ coache.author_image | relative_url }}" alt="img" class="image-fit">
+                            <a href="{{ coache.url }}" class="thm-color-one">
+                                {{ coache.author_name }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% comment %} End Block {% endcomment %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

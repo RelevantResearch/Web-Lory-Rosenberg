@@ -1,0 +1,98 @@
+<footer class="footer">
+    <div class="container">
+        <div class="footer_top section-padding">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="ft_widget ft_about wow fadeInDown">
+                        <a href="{{'/' | relative_url }}" class="logo">
+                            <img src="{{ site.data.ui.site.logo | relative_url  }}" alt="logo" class="image-fit">
+                        </a>
+
+                        <ul class="info">
+                            <li>
+                                <a href="#">
+                                    {{ site.data.ui.site.address }}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:{{ site.data.ui.site.phone }}">
+                                    {{ site.data.ui.site.phone }}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:{{ site.data.ui.site.email }}">
+                                    {{ site.data.ui.site.email }}
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="social">
+                            {%- for social in site.data.menus.socials -%}
+                            <li>
+                                <a href="{{social.url}}">
+                                    <i class="{{social.icon}}"></i>
+                                </a>
+                            </li>
+                            {%- endfor -%}
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="ft_widget ft_menu wow fadeInUp">
+                        <h6 class="ft-title">
+                            {{ site.data.ui.footer.menu1 }}
+                        </h6>
+                        {%- if site.data.menus.footer1 -%}
+                        <ul>
+                            {%- for menu in site.data.menus.footer1 -%}
+                            <li>
+                                <a href="{{menu.path}}">
+                                    {{menu.label}}
+                                </a>
+                            </li>
+                            {%- endfor -%}
+                        </ul>
+                        {%- endif -%}
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="ft_widget ft_menu wow fadeInDown">
+                        <h6 class="ft-title">
+                            {{ site.data.ui.footer.menu2 }}
+                        </h6>
+                        {%- if site.data.menus.footer2 -%}
+                        <ul>
+                            {%- for menu in site.data.menus.footer2 -%}
+                            <li>
+                                <a href="{{menu.path}}">
+                                    {{menu.label}}
+                                </a>
+                            </li>
+                            {%- endfor -%}
+                        </ul>
+                        {%- endif -%}
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="ft_widget ft_apps wow fadeInUp">
+                        <h6 class="ft-title">{{ site.data.ui.footer.menu3 }}</h6>
+                        <p class="mb-xl-20">{{ site.data.ui.footer.download_intro }}</p>
+                        <a href="{{ site.data.ui.footer.google_store_link }}" class="app_img">
+                            <img src="{{'assets/images/google_store.jpg' | relative_url}}" alt="img" />
+                        </a>
+                        <a href="{{ site.data.ui.footer.apple_store_link }}" class="app_img">
+                            <img src="{{'assets/images/apple_store.jpg' | relative_url}}" alt="img" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <p class="mb-0">{{ site.data.ui.site.copywrite }}</p>
+        </div>
+    </div>
+</footer>

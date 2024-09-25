@@ -1,0 +1,191 @@
+---
+layout: page
+title: Videos
+description: ''
+tags: []
+---
+
+{% comment %} Start aside_bar {% endcomment %}
+{% include aside_bar.html %}
+{% comment %} End aside_bar {% endcomment %}
+
+<div class="aside-overlay trigger-left">
+</div>
+
+{% comment %} Start header3 {% endcomment %}
+{% include header3.html %}
+{% comment %} End header3 {% endcomment %}
+
+{% comment %} Start subheader2 {% endcomment %}
+{% include subheader2.html %}
+{% comment %} End subheader2 {% endcomment %}
+
+<section class="section-padding isotope-filter-items">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="filter-btns mb-5 wow fadeInDown">
+                    <ul>
+                        <li class="active filter-trigger" data-filter="*">
+                            <a href="#">
+                                All
+                            </a>
+
+                        </li>
+
+                        <li class="filter-trigger" data-filter=".lifestyle">
+                            <a href="#">
+                                Lifestyle
+                            </a>
+
+                        </li>
+
+                        <li class="filter-trigger" data-filter=".goals">
+                            <a href="#">
+                                Goals
+                            </a>
+
+                        </li>
+
+                        <li class="filter-trigger" data-filter=".fashion">
+                            <a href="#">
+                                Fashion
+                            </a>
+
+                        </li>
+
+                        <li class="filter-trigger" data-filter=".health">
+                            <a href="#">
+                                Health
+                            </a>
+
+                        </li>
+
+                        <li class="filter-trigger" data-filter=".business">
+                            <a href="#">
+                                Business
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row filteritems">
+
+            {%- for tutorial in site.data.ui.tutorials limit: 3 -%}
+            <div class="col-lg-4 col-md-6 masonry-item {{tutorial.category | prepend: ' ' }}">
+                <div class="video_box wow fadeInUp" data-wow-delay=".10ms">
+                    <img src="{{tutorial.image | relative_url }}" alt="img" class="image-fit" />
+
+                    <div class="video_badges">
+                        <span class="tag_badge bg-thm-color-four">
+                            {{tutorial.price}}
+                        </span>
+                    </div>
+
+                    <a href="{{tutorial.image}}" class="popup-youtube video_btn">
+                        <i class="fas fa-play"></i>
+                    </a>
+
+                    <div class="video_text">
+                        <h6 class="text-white mb-0">
+                            {{tutorial.title}}
+                        </h6>
+                        <p class="mb-0 thm-color-light">
+                            By {{tutorial.author}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {%- endfor -%}
+        </div>
+
+        <div class="row filteritems">
+            {%- for tutorial in site.data.ui.tutorials limit: 4  offset: 3 -%}
+            <div class="col-xl-3 col-lg-4 col-md-6 masonry-item  {{tutorial.category | prepend: ' ' }}">
+                <div class="video_box wow fadeInDown" data-wow-delay=".40ms">
+                    <img src="{{tutorial.image | relative_url }}" alt="img" class="image-fit" />
+                    <div class="video_badges">
+                        <span class="tag_badge bg-thm-color-four">
+                            {{tutorial.price}}
+                        </span>
+                    </div>
+
+                    <a href="{{tutorial.youtube}}" class="popup-youtube video_btn">
+                        <i class="fas fa-play"></i>
+                    </a>
+
+                    <div class="video_text">
+                        <h6 class="text-white mb-0">
+                            {{tutorial.title}}
+                        </h6>
+                        <p class="mb-0 thm-color-light">
+                            By {{tutorial.author}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {%- endfor -%}
+        </div>
+
+        <div class="row filteritems">
+            {%- for tutorial in site.data.ui.tutorials limit: 2 offset: 8 -%}
+            <div class="col-md-6 masonry-item {{tutorial.category}}">
+                <div class="video_box wow fadeInDown" data-wow-delay=".80ms">
+                    <img src="{{tutorial.image}}" alt="img" class="image-fit" />
+
+                    <div class="video_badges">
+                        <span class="tag_badge bg-thm-color-four">
+                            {{tutorial.price}}
+                        </span>
+                    </div>
+
+                    <a href="{{tutorial.youtube}}" class="popup-youtube video_btn">
+                        <i class="fas fa-play"></i>
+                    </a>
+
+                    <div class="video_text">
+                        <h6 class="text-white mb-0">
+                            {{tutorial.title}}
+                        </h6>
+                        <p class="mb-0 thm-color-light">
+                            By {{tutorial.author}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {%- endfor -%}
+        </div>
+    </div>
+</section>
+
+<div class="bg-thm-color-two plane_box relative z-1">
+    <div class="container relative z-1">
+        <div class="row justify-content-center">
+            <div class="col-xl-9 col-lg-11 relative z-1">
+                <img src="{{'assets/images/elements/element_6.png' | relative_url }}" class="element_1 rotate_elem" alt="Element" />
+                <h2 class="thm-color-white">{{ site.data.ui.plane.title }}</h2>
+            </div>
+        </div>
+        <img src="{{'assets/images/elements/element_7.png' | relative_url }}" class="element_2 zoom-fade" alt="Element" />
+    </div>
+
+</div>
+
+{% comment %} Start coach-plan {% endcomment %}
+{% include coach-plan.html %}
+{% comment %} End coach-plan {% endcomment %}
+
+{% comment %} Start cta3 {% endcomment %}
+{% include cta2.html %}
+{% comment %} End cta3 {% endcomment %}
+
+{% comment %} Start footer3 {% endcomment %}
+{% include footer3.html %}
+{% comment %} End footer3 {% endcomment %}

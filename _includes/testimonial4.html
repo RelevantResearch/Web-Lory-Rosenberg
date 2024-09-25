@@ -1,0 +1,36 @@
+<section class="section section-bg" style="background-image: url('{{'assets/images/bg/bg_3.png' | relative_url }}');">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title wow fadeInUp">
+                    <p class="subtitle"><i class="fal fa-book"></i>{{ site.data.ui.testimonial.subtitle }}</p>
+                    <h3 class="title">{{ site.data.ui.testimonial.title2 }}</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial_slider_main mb-xl-30 justify-content-center wow fadeInDown">
+            {% for testimonial in site.data.ui.testimonials %}
+            <div class="slide-item row">
+                <div class="testimonial_item style_3 col-lg-7">
+                    <p class="comment">
+                        {{ testimonial.quotes }}
+                    </p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="testimonial_slider_nav col-lg-7">
+                {% for testimonial in site.data.ui.testimonials %}
+                <div class="slide-item">
+                    <div class="testimonial_item_img">
+                        <img src="{{testimonial.author_image | relative_url }}" class="image-fit" alt="{{testimonial.author_name}}" />
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

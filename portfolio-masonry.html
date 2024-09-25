@@ -1,0 +1,57 @@
+---
+layout: page
+title: Portfolio Masonry
+description: ''
+tags: []
+---
+
+{% comment %} Start aside_bar {% endcomment %}
+{% include aside_bar.html %}
+{% comment %} End aside_bar {% endcomment %}
+
+<div class="aside-overlay trigger-left">
+</div>
+
+{% comment %} Start header3 {% endcomment %}
+{% include header3.html %}
+{% comment %} End header3 {% endcomment %}
+
+{% comment %} Start subheader2 {% endcomment %}
+{% include subheader2.html %}
+{% comment %} End subheader2 {% endcomment %}
+
+<section class="section-padding">
+    <div class="container">
+        <div class="row">
+            {% for portfolio in site.data.ui.portfolios %}
+            {% comment %} Start portfolio. Block {% endcomment %}
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio_box type_gallery type_masonry {{ portfolio.category | prepend: ' ' | downcase }}">
+                    <div class="portfolio_img">
+                        <img src="{{ portfolio.image | relative_url }}" class="image-fit" alt="img" />
+                    </div>
+
+                    <div class="link">
+                        <i class="fal fa-plus"></i>
+                        <h4 class="title mb-0">
+                            <a href="{{ portfolio.url }}">
+                                {{ portfolio.title | split: ' ' | first }}
+                            </a>
+                        </h4>
+                        <p>{{ portfolio.title }}</p>
+                    </div>
+                </div>
+            </div>
+            {% comment %} End portfolio. Block {% endcomment %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% comment %} Start cta4 {% endcomment %}
+{% include cta2.html %}
+{% comment %} End cta4 {% endcomment %}
+
+{% comment %} Start footer4 {% endcomment %}
+{% include footer4.html %}
+{% comment %} End footer4 {% endcomment %}

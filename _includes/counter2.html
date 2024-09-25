@@ -1,0 +1,21 @@
+<div class="section-padding">
+    <div class="container">
+        <div class="row">
+            {% for counter2 in site.data.ui.counters %}
+            <div class="col-lg-3 col-md-6">
+                <div class="counter_box wow fadeInUp" data-wow-delay=".2s">
+                    <div class="icon">
+                        <img src="{{ counter2.icon | relative_url }}" alt="icon" class="image-fit">
+                    </div>
+                    <div class="text">
+                        <div class="counter">
+                            <b data-from="0" data-to="369">{{ counter2.count }}</b>
+                        </div>
+                        <p class="mb-0">{{ counter2.title }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

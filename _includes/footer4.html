@@ -1,0 +1,101 @@
+<footer class="footer bg-thm-color-one style_2 style_3 z-1" style="background-image:url('{{'assets/images/elements/element_18.png' | relative_url }}');">
+    <div class="container relative z-1">
+        <div class="footer_top section-padding">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="ft_widget ft_about">
+                        <a href="index.html" class="logo">
+                            <img src="{{ site.data.ui.footer4.logo | relative_url  }}" alt="logo" class="image-fit">
+                        </a>
+                        <ul class="info">
+                            <li>
+                                <a href="{{ site.data.ui.footer4_address_link }}">
+                                    {{ site.data.ui.footer4_address }}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ site.data.ui.footer4_tell_link }}">
+                                    {{ site.data.ui.footer4_tell }}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ site.data.ui.footer4_email_link }}">
+                                    {{ site.data.ui.footer4_email }}
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="social">
+                            {%- for social in site.data.menus.socials -%}
+                            <li>
+                                <a href="{{social.url}}">
+                                    <i class="{{social.icon}}"></i>
+                                </a>
+                            </li>
+                            {%- endfor -%}
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="ft_widget ft_menu">
+                        <h6 class="ft-title">{{ site.data.ui.footer4.menu1 }}</h6>
+                        {%- if site.data.menus.footer2 -%}
+                        <ul>
+                            {%- for menu in site.data.menus.footer1 -%}
+                            <li>
+                                <a href="{{menu.path}}">
+                                    {{menu.label}}
+                                </a>
+                            </li>
+                            {%- endfor -%}
+                        </ul>
+                        {%- endif -%}
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="ft_widget ft_menu">
+                        <h6 class="ft-title">{{ site.data.ui.footer4.menu2 }}</h6>
+                        {%- if site.data.menus.footer2 -%}
+                        <ul>
+                            {%- for menu in site.data.menus.footer2 -%}
+                            <li>
+                                <a href="{{menu.path}}">
+                                    {{menu.label}}
+                                </a>
+                            </li>
+                            {%- endfor -%}
+                        </ul>
+                        {%- endif -%}
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div id="mc_embed_signup" class="ft_widget ft_newsletter">
+                        <h6 class="ft-title">{{ site.data.ui.footer4.newsletter }}</h6>
+                        <p class="mb-xl-20">{{ site.data.ui.footer4.newsletter_info }}</p>
+                        <form action="http://{{ site.mailchimp.username }}.list-manage.com/subscribe/post?u={{ site.mailchimp.user-id }}&id={{ site.mailchimp.list-id }}" method="post">
+                            <input type="email" name="EMAIL" placeholder="Enter Your Email" autocomplete="off" />
+                            <button type="submit" class="thm-btn bg-thm-color-three thm-color-three-shadow btn-rectangle">{{ site.data.ui.footer4.newsletter_btn }}</button>
+                        </form>
+                        <div class="info mt-20"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <p class="mb-0">{{ site.data.ui.site.copywrite }}</p>
+        </div>
+
+        <img src="{{'assets/images/elements/element_16.png' | relative_url }}" alt="element" class="element_3 rotate_elem" />
+        <div class="arrows to_up slideTop">
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+        </div>
+    </div>
+</footer>

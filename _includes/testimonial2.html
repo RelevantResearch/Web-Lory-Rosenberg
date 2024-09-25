@@ -1,0 +1,39 @@
+<section>
+    <div class="container">
+        <div class="testi_bg wow fadeInRight" style="background-image: url(assets/images/shape_img.png);">
+            <div class="row">
+                <div class="col-xl-5 col-lg-6">
+                    <div class="section">
+                        <div class="section-title left-align wow fadeInUp">
+                            <p class="subtitle"><i class="fal fa-book"></i>{{ site.data.ui.testimonial.subtitle }}</p>
+                            <h3 class="title">{{ site.data.ui.testimonial.title }}</h3>
+                        </div>
+
+                        <div class="testimonial_slider_single">
+                            {% for testimonial in site.data.ui.testimonials %}
+                            <div class="slide-item">
+                                <div class="testimonial_item style_2">
+                                    <p class="comment">{{ testimonial.quotes }}</p>
+                                    <div class="author">
+                                        <div class="image">
+                                            <img src="{{ testimonial.author_image | relative_url }}" alt="img" class="image-fit">
+                                        </div>
+                                        <div class="text">
+                                            <h6 class="mb-0">
+                                                {{ testimonial.author_name }}
+                                            </h6>
+                                            <p class="mb-0 font-weight-bold thm-color-two">
+                                                {{ testimonial.author_position }}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,28 @@
+<aside class="aside_bar aside_bar_left aside_mobile">
+    <a href="{{'/' | relative_url}}" class="logo">
+        <img src="{{ site.data.ui.site.logo | relative_url }}" alt="logo" />
+    </a>
+
+    <nav>
+        <ul class="main-menu">
+            {%- for menu in site.data.menus.header -%}
+            <li class="menu-item {%- if menu.submenu -%}{{ ' menu-item-has-children'}}{%- endif -%}">
+                <a href="{{menu.path}}">
+                    {{menu.label}}
+                </a>
+                {%- if menu.submenu -%}
+                <ul class="sub-menu">
+                    {%- for submenu in menu.submenu -%}
+                    <li class="menu-item">
+                        <a href="{{submenu.path}}">
+                            {{submenu.label}}
+                        </a>
+                    </li>
+                    {%- endfor -%}
+                    
+                {%- endif -%}
+            </li>
+            {%- endfor -%}
+        </ul>
+    </nav>
+</aside>

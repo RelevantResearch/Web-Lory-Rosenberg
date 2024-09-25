@@ -1,0 +1,15 @@
+{%- if site.data.ui.sponsors -%}
+<div class="section-padding pt-0">
+    <div class="container">
+        <div class="row justify-content-around">
+            {% for sponsor in site.data.ui.sponsors %}
+            <div class="col-auto">
+                <div class="sponsors_img">
+                    <img src="{{ sponsor.image }}" alt="img">
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{%- endif -%}

@@ -1,0 +1,85 @@
+---
+layout: page
+title: Events
+description: ''
+tags: []
+---
+
+{% comment %} Start aside_bar {% endcomment %}
+{% include aside_bar.html %}
+{% comment %} End aside_bar {% endcomment %}
+
+<div class="aside-overlay trigger-left">
+</div>
+
+
+{% include header3.html %}
+
+{% comment %} Start subheader2 {% endcomment %}
+{% include subheader2.html %}
+{% comment %} End subheader2 {% endcomment %}
+
+
+<section class="section-padding bg-thm-color-two-light">
+    <div class="container">
+        <div class="page_bar">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-left wow fadeInLeft">
+                    <p class="thm-font">
+                        We found {{site.data.ui.events | size }} events available for you
+                    </p>
+                </div>
+
+                <div class="col-lg-6 text-center text-lg-right">
+                    <div class="bar_select mb-xl-30 relative wow fadeInRight">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            {% for event in site.data.ui.events %}
+            <div class="col-lg-4 col-md-6">
+
+                <div class="event_block wow fadeInDown" data-wow-delay=".10ms">
+                    <div class="event_img relative">
+                        <img src="{{ event.image | relative_url }}" alt="img" class="image-fit">
+                        <span class="tag_badge style_3 bg-thm-color-four">
+                            {{ event.price }}
+                        </span>
+                    </div>
+
+                    <div class="event_caption">
+                        <div class="event_text">
+                            <span class="date thm-color-two font-weight-bold">
+                                {{ event.date | date: '%-d %B %Y' }}
+                            </span>
+                            <h5 class="event_title">
+                                <a href="{{ event.url }}">{{ event.title }}</a>
+                            </h5>
+                            <p>
+                                <span class="thm-color-two mr-2">
+                                    <i class="far fa-map-marker-alt"></i>
+                                </span>
+                                {{ event.location }}
+                            </p>
+                        </div>
+                        <div class="event_btn">
+                            <a href="{{ event.url }}" class="thm-btn bg-thm-color-two-light thm-color-two btn-rectangle btn-small">
+                                <i class="fal fa-chevron-right font-weight-bold"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+
+{% include sponsor2.html %}
+
+{% include cta2.html %}
+
+{% include footer3.html %}

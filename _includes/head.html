@@ -1,0 +1,26 @@
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link rel="icon" type="image/png" sizes="32x32" href="{{ site.data.ui.site.favicon | relative_url }}" />
+   {%- include seo.html -%}
+   {% comment %} Bootstrap css {% endcomment %}
+   <link href="{{ 'assets/css/plugins/bootstrap.min.css' | relative_url }}" rel="stylesheet" />
+   {% comment %} Slick Slider {% endcomment %}
+   <link href="{{ 'assets/css/plugins/slick.css' | relative_url }}" rel="stylesheet" />
+   {% comment %} Main Css {% endcomment %}
+   <link href="{{ 'assets/css/plugins/magnific-popup.css' | relative_url }}" rel="stylesheet" />
+   {% comment %} Animate Css {% endcomment %}
+   <link href="{{ 'assets/css/plugins/animate.css' | relative_url }}" rel="stylesheet" />
+   {% comment %} Flaticon {% endcomment %}
+   <link href="{{ 'assets/fonts/flaticon/flaticon.css' | relative_url }}" rel="stylesheet" />
+   {% comment %} Main Css {% endcomment %}
+   <link href="{{ 'assets/fonts/font-awesome.min.css' | relative_url }}" rel="stylesheet" />
+   {% comment %} Main Css {% endcomment %}
+   {%- if page.map -%}
+    <link href="{{ 'assets/css/plugins/leaflet.css' | relative_url }}" rel="stylesheet">
+   {%- endif -%}
+   <link href="{{ 'assets/css/style.css' | relative_url }}" rel="stylesheet" />
+   {% comment %} Main Css {% endcomment %}
+   <link href="{{ 'assets/css/responsive.css' | relative_url }}" rel="stylesheet" />   
+   {% comment %} netlify identity widget {% endcomment %}
+   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" type="text/javascript"></script>
+   {%- include google_analytics.html -%}

@@ -1,0 +1,77 @@
+---
+layout: page
+title: Faqs
+map: true 
+description: ''
+tags: []
+---
+
+{% comment %} Start aside_bar {% endcomment %}
+{% include aside_bar.html %}
+{% comment %} End aside_bar {% endcomment %}
+<div class="aside-overlay trigger-left"></div>
+
+{% include header3.html %}
+
+{% comment %} Start subheader2 {% endcomment %}
+{% include subheader2.html %}
+{% comment %} End subheader2 {% endcomment %}
+
+
+<div class="section-padding faqs_elements">
+    <div class="container relative z-1">
+        <div class="row justify-content-center">
+            <div class="col-xl-9 col-lg-11">
+                {% assign faqs = site.data.ui.faqs | group_by: "category" %}
+                <ul class="nav nav-tabs style_3 wow fadeInUp">
+                    {%- for group in faqs -%}
+                    <li class="nav-item">
+                        <a href="#faq-{{group.name | downcase }}" class="nav-link {%- if forloop.first -%}{{' active'}}{%- endif -%}" data-toggle="tab">
+                            {{group.name | upcase }}
+                        </a>
+                    </li>
+                    {%- endfor -%}
+                </ul>
+                <div class="tab-content wow fadeInDown">
+                    {%- for group in faqs -%}
+                    <div class="tab-pane fade   {%- if forloop.first -%}{{' active show'}}{%- endif -%}" id="faq-{{group.name | downcase }}">
+                        <div class="accordion accordion-style style_2 mb-xl-30" id="generalaccordion">
+                            {%- for faq in group.items -%}
+                            <div class="card">
+                                <div class="card-header">
+                                    <button class="btn btn-link {%- if forloop.first == false -%}
+                                        {{ ' collapsed'}}
+                                    {%- endif -%}" type="button" data-toggle="collapse" data-target="#{{group.name | downcase }}-item-{{forloop.index}}" aria-expanded="true" aria-controls="{{group.name | downcase }}-item-{{forloop.index}}">
+                                        {{faq.ask}}
+                                    </button>
+                                </div>
+                                <div id="{{group.name | downcase }}-item-{{forloop.index}}" class="collapse {%- if forloop.first -%} {{' show'}}{%- endif -%}" aria-labelledby="{{group.name | downcase }}-item-{{forloop.index}}" data-parent="#faq-{{group.name | downcase }}">
+                                    <div class="card-body">
+                                        {{faq.answer}}
+                                    </div>
+                                </div>
+                            </div>
+                            {%- endfor -%}
+                        </div>
+                    </div>
+                    {%- endfor -%}
+                </div>
+            </div>
+        </div>
+        <img src="{{'assets/images/elements/element_10.png' | relative_url}}" alt="element" class="element_1 zoom-fade">
+        <img src="{{'assets/images/elements/element_35.png' | relative_url}}" alt="element" class="element_2 zoom-fade">
+        <img src="{{'assets/images/elements/element_36.png' | relative_url}}" alt="element" class="element_3 rotate_elem">
+        <img src="{{'assets/images/elements/element_37.png' | relative_url}}" alt="element" class="element_4 rotate_elem">
+        <img src="{{'assets/images/elements/element_38.png' | relative_url}}" alt="element" class="element_5 rotate_elem">
+    </div>
+</div>
+
+{% include plane.html %}
+
+{% include contact.html %}
+
+{% include portfolio3.html %}
+
+{% include cta2.html %}
+
+{% include footer.html %}

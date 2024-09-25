@@ -1,0 +1,56 @@
+<section class="section pt-0 wide_fluid_container">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title wow fadeInDown">
+                    <p class="subtitle"><i class="fal fa-book"></i>{{ site.data.ui.coach.subtitle }}</p>
+                    <h3 class="title">{{ site.data.ui.coach.title }}</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="coach_slider row">
+            {% for coach in site.data.ui.coaches %}
+            <div class="col-12 slide-item">
+                <div class="coach_block">
+                    <div class="coach_img">
+                        <img src="{{ coach.image | relative_url }}" alt="img" class="image-fit">
+                        <div class="coach_badges">
+                            <span class="tag_badge bg-thm-color-four">
+                                {{ coach.price }}
+                            </span>
+                        </div>
+                        <a href="{{coach.url | default: '#'}}" class="thm-btn thm-color-two bg-thm-color-white thm-color-two-shadow btn-circle link">
+                            <i class="fal fa-chevron-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="coach_caption">
+                        <div class="coach_meta">
+                            <a href="#" class="coach_cat thm-btn bg-thm-color-three thm-color-three-shadow btn-rounded">
+                                {{ coach.category }}
+                            </a>
+                            <div class="ratings">
+                                <i class="fal fa-star {%- if coach.rating >= 1 -%} {{' active'}} {%- endif -%}"></i>
+                                <i class="fal fa-star  {%- if coach.rating >= 2 -%} {{' active'}} {%- endif -%}"></i>
+                                <i class="fal fa-star  {%- if coach.rating >= 3 -%} {{' active'}} {%- endif -%}"></i>
+                                <i class="fal fa-star  {%- if coach.rating >= 4 -%} {{' active'}} {%- endif -%}"></i>
+                                <i class="fal fa-star {%- if coach.rating >= 5 -%} {{' active'}} {%- endif -%}"></i>
+                            </div>
+                        </div>
+                        <h5 class="title mb-xl-20">
+                            <a href="{{coach.url}}">{{ coach.title }}</a>
+                        </h5>
+                        <div class="author">
+                            <img src="{{ coach.author_image | relative_url }}" alt="img" class="image-fit">
+                            <a href="#" class="thm-color-one">
+                                {{ coach.author_name }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,65 @@
+---
+layout: page
+title: Services
+description: ''
+tags: []
+---
+
+{% comment %} Start aside_bar {% endcomment %}
+{% include aside_bar.html %}
+{% comment %} End aside_bar {% endcomment %}
+
+<div class="aside-overlay trigger-left">
+</div>
+
+{% comment %} Start header3 {% endcomment %}
+{% include header3.html %}
+{% comment %} End header3 {% endcomment %}
+
+{% comment %} Start subheader2 {% endcomment %}
+{% include subheader2.html %}
+{% comment %} End subheader2 {% endcomment %}
+
+<section class="section-padding section_counter">
+    <div class="container">
+        <div class="row">
+            {% for service in site.data.ui.services %}
+            {% comment %} Start service. Block {% endcomment %}
+            <div class="col-lg-6">
+                <div class="service_block shadow_1 wow fadeInUp" wow-data-delay=".10ms">
+                    <div class="icon">
+                        <img src="{{ service.image }}" alt="icon">
+                    </div>
+                    <div class="text">
+                        <h5 class="title">
+                            <a href="{{ service.url }}">
+                                {{ service.name }}
+                            </a>
+                        </h5>
+                        <p class="mb-0">
+                            {{ service.description }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {% comment %} End service. Block {% endcomment %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% comment %} Start video-quote {% endcomment %}
+{% include video-quote.html %}
+{% comment %} End video-quote {% endcomment %}
+
+{% comment %} Start pricing {% endcomment %}
+{% include pricing.html %}
+{% comment %} End pricing {% endcomment %}
+
+{% comment %} Start cta3 {% endcomment %}
+{% include cta2.html %}
+{% comment %} End cta3 {% endcomment %}
+
+{% comment %} Start footer3 {% endcomment %}
+{% include footer3.html %}
+{% comment %} End footer3 {% endcomment %}

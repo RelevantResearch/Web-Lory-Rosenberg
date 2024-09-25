@@ -1,0 +1,38 @@
+<section class="section about_inner">
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-6">
+                <div class="image_box shadow_1 mb-md-80 wow fadeInLeft">
+                    <img src="{{ site.data.ui.about2.image | relative_url }}" alt="img" class="image-fit">
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="section-title left-align wow fadeInDown">
+                    <p class="subtitle"><i class="fal fa-book"></i>{{ site.data.ui.about2.subtitle }}</p>
+                    <h3 class="title">{{ site.data.ui.about2.title }}</h3>
+                    <p>{{ site.data.ui.about2.description }}</p>
+                </div>
+
+                <ul class="about_list row">
+                    {% for about2 in site.data.ui.features3 %}
+                    <li class="col-md-6 wow fadeInUp">
+                        <div class="icon">
+                            <img src="{{ 'assets/images/icons/icon_5.png' | relative_url }}" alt="img" class="image-fit">
+                        </div>
+                        <div class="text">
+                            <h6 class="mb-2">  {{ about2.name }} </h6>
+                            <p class="mb-0"> {{ about2.description }} </p>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+
+                <a href="{{ site.data.ui.about2.button_link }}" class="thm-btn bg-thm-color-three thm-color-three-shadow btn-rectangle wow fadeInDown">
+                    {{ site.data.ui.about2.button }}
+                    <i class="fal fa-chevron-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

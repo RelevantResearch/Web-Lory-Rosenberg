@@ -1,0 +1,47 @@
+# config.yml
+tags: [Business, Corporate, HTML, Art, Finance, Investment, CSS, Coach, Planing, Creative, Health]
+
+backend:
+  name: git-gateway
+  local_backend: true
+  branch: main # Branch to update (optional; defaults to main)
+media_folder: 'assets/uploads'
+collections:
+  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+    label_singular: "Post" # Used in the UI, ie.: "New Post"
+    label: "Posts" # Used in the UI, ie.: "New Post"
+    folder: "_posts" # The path to the folder where the documents are stored
+    sort: "date:desc" # Default is title:asc
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+    fields: # The fields each document in this collection have
+      - {label: "Layout", name: "post", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Image", name: "image", widget: "image", allow_multiple: false}
+      - {label: "Category", name: "category", widget: "string", default: "uncategorized"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Comments", name: "comments", widget: "boolean", default: true}
+      - {label: "Tags", name: "tags", widget: "list"}
+      
+  - name: "page" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Pages" # Used in the UI, ie
+    label_singular: "Page" # Used in the UI, ie.: "New Post"
+    folder: "/" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields: # The fields each document in this collection have
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Featured image", name: "feature_image", widget: "image", required: false}
+      - {label: "Feature text", name: "feature_text", widget: "markdown", required: false}
+      - {label: "Excerpt", name: "excerpt", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Meta image", name: "image", widget: "image", required: false}
+      - {label: "Tags", name: "tags", widget: "list"}
+

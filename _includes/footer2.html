@@ -1,0 +1,112 @@
+<footer class="footer bg-thm-color-two-gradient style_2 z-1" style="background-image:url(assets/images/elements/element_15.png);">
+    <img src="{{'assets/images/elements/element_13.png' | relative_url }}" class="element_1" alt="Element" />
+    <img src="{{'assets/images/elements/element_14.png' | relative_url }}" class="element_2" alt="Element" />
+    <div class="container relative z-1">
+        <div class="footer_top section-padding">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="ft_widget ft_about wow fadeInDown">
+                        <a href="{{'/' | relative_url }}" class="logo">
+                            <img src="{{ site.data.ui.site.logo | relative_url  }}" alt="logo" class="image-fit">
+                        </a>
+                        <ul class="info">
+                            <li>
+                                <a href="#">
+                                    {{ site.data.ui.site.address }}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:{{ site.data.ui.site.phone }}">
+                                    {{ site.data.ui.site.phone }}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:{{ site.data.ui.site.email }}">
+                                    {{ site.data.ui.site.email }}
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="social">
+                            {%- for social in site.data.menus.socials -%}
+                            <li>
+                                <a href="{{social.url}}">
+                                    <i class="{{social.icon}}"></i>
+                                </a>
+                            </li>
+                            {%- endfor -%}
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="ft_widget ft_menu wow fadeInUp">
+                        <h6 class="ft-title">
+                            {{ site.data.ui.footer.menu1 }}
+                        </h6>
+                        {%- if site.data.menus.footer1 -%}
+                        <ul>
+                            {%- for menu in site.data.menus.footer1 -%}
+                            <li>
+                                <a href="{{menu.path}}">
+                                    {{menu.label}}
+                                </a>
+                            </li>
+                            {%- endfor -%}
+                        </ul>
+                        {%- endif -%}
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="ft_widget ft_menu wow fadeInDown">
+                        <h6 class="ft-title">
+                            {{ site.data.ui.footer.menu2 }}
+                        </h6>
+                        {%- if site.data.menus.footer2 -%}
+                        <ul>
+                            {%- for menu in site.data.menus.footer2 -%}
+                            <li>
+                                <a href="{{menu.path}}">
+                                    {{menu.label}}
+                                </a>
+                            </li>
+                            {%- endfor -%}
+                        </ul>
+                        {%- endif -%}
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div id="mc_embed_signup" class="ft_widget ft_newsletter wow fadeInUp">
+                        <h6 class="ft-title">{{ site.data.ui.footer.newsletter }}</h6>
+                        <p class="mb-xl-20">{{ site.data.ui.footer.newsletter_intro }}</p>
+                        <form action="http://{{ site.mailchimp.username }}.list-manage.com/subscribe/post?u={{ site.mailchimp.user-id }}&id={{ site.mailchimp.list-id }}" method="post">
+                            <input name="EMAIL" autocomplete="email" placeholder="Your email address"
+                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'"
+                            required="" type="email" />
+                            <button type="submit" class="thm-btn bg-thm-color-three thm-color-three-shadow btn-rounded">
+                                {{ site.data.ui.footer.newsletter_submit }}
+                                <i class="fal fa-chevron-right ml-2"></i>
+                            </button>
+                        </form>
+                        <div class="info mt-20"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <p class="mb-0">{{ site.data.ui.site.copywrite }}</p>
+        </div>
+
+        <img src="{{'assets/images/elements/element_16.png' | relative_url }}" alt="element" class="element_3 rotate_elem" />
+
+        <div class="arrows to_up slideTop">
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+        </div>
+    </div>
+</footer>

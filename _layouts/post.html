@@ -1,0 +1,181 @@
+---
+#compress
+---
+<!DOCTYPE html>
+<html lang="{{ site.data.ui.locale | slice: 0,2 | default: "en" }}">
+{% include head.html %}
+<body>
+    <div class="preloader">
+        <img src="{{'assets/images/preloader.svg' | relative_url }}" alt="preloader" />
+    </div>
+
+    {% comment %} Start aside_bar {% endcomment %}
+    {% include aside_bar.html %}
+    {% comment %} End aside_bar {% endcomment %}
+
+    <div class="aside-overlay trigger-left"></div>
+
+    {% comment %} Start header3 {% endcomment %}
+    {% include header3.html %}
+    {% comment %} End header3 {% endcomment %}
+
+    {% comment %} Start subheader2 {% endcomment %}
+    {% include subheader2.html breadcrumb_active="Blog Details" %}
+    {% comment %} End subheader2 {% endcomment %}
+
+    <div class="section-padding">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-8 mb-md-80">
+                    <!-- post details -->
+                    <article class="post post_list style_2 post_details mb-0 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+                        <div class="post_img">
+                            <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="image-fit">
+                        </div>
+                        <div class="post_caption">
+                            <ul class="post_meta">
+                                {%- if page.author -%}
+                                <li>
+                                    <i class="fal fa-user"></i>
+                                    {{ page.author | default: "Admin" }}
+                                </li>
+                                {%- endif -%}
+                                <li>
+                                    <i class="fal fa-calendar-alt"></i>
+                                    {{ page.date | date_to_string }}
+                                </li>
+                            </ul>
+                            <h4 class="post_title">{{ page.title }}</h4>
+                            <div>
+                                {{ content }}
+                            </div>
+                        </div>
+                        <!-- Post Tags & Share Start -->
+                        <div class="post_tags_share">
+                            {%- if page.tags and page.tags  -%}
+                            <div class="post_tags">
+                                <h6>Popular Tags: </h6>
+                                <div class="tags">
+                                    {%- for tag in page.tags limit: 4 -%}
+                                    <a href="/tags/{{ tag | slugify: 'pretty' }}">{{tag}}</a>
+                                    {%- endfor -%}
+                                </div>
+                            </div>
+                            {%- endif -%}
+                            <div class="post_share">
+                                <h6>Share: </h6>
+                                <ul class="social">
+                                    <li>
+                                        <a href="https://twitter.com/intent/tweet?{% if site.twitter.username %}via={{ site.twitter.username | url_encode }}&{% endif %}text={{ page.title | url_encode }}%20{{ page.url | absolute_url | url_encode }}" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter">
+                                            <i class="fab fa-fw fa-twitter" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook">
+                                            <i class="fab fa-fw fa-facebook" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url | url_encode }}" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
+                                            <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Post Tags & Share End -->
+                        {%- assign auth = site.data.ui.teams | where:"name", page.author | first -%}
+                        {%- if auth and auth.name -%}
+                        <!-- Post Author Start -->
+                        <div class="post_author">
+                            <img src="{{auth.image | relative_url }}" alt="{{auth.name }}" class="image-fit">
+                            <div class="text">
+                                <h5 class="mb-2">{{auth.name }}</h5>
+                                <p class="mb-2">{{auth.intro }}</p>
+                                <ul class="social">
+                                    <li>
+                                        <a target="_blank" href="{{auth.facebook }}">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="{{auth.twitter }}">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="{{auth.instagram }}">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="{{auth.behance }}">
+                                            <i class="fab fa-behance"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Post Author End -->
+                        {%- endif -%}
+                        <!-- Post Navigation Start -->
+                        <ul class="post_navigation">
+                            {% if page.next and page.next.url contains "/blog/" %}
+                            <li>
+                                <div class="image">
+                                    <img src="{{ page.next.image | relative_url }}" alt="img" class="image-fit">
+                                </div>
+                                <div class="text">
+                                    <h6 class="mb-0">
+                                        <a href="{{ page.next.url }}">{{ page.next.title }}</a>
+                                    </h6>
+                                    <p class="mb-0"><strong><i class="fal fa-calendar-alt"></i> </strong>
+                                        <a href="{{ page.next.url }}">{{ page.next.date | date_to_string }}</a>
+                                    </p>
+                                </div>
+                            </li>
+                            {% endif %}
+                            {% if page.previous and page.previous.url contains "/blog/" %}
+                            <li>
+                                <div class="image">
+                                    <img src="{{ page.previous.image | relative_url }}" alt="img" class="image-fit">
+                                </div>
+                                <div class="text">
+                                    <h6 class="mb-0"><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></h6>
+                                    <p class="mb-0"><strong><i class="fal fa-calendar-alt"></i> </strong>
+                                        <a href="{{ page.previous.url }}">{{ page.previous.date | date_to_string}}</a>
+                                    </p>
+                                </div>
+                            </li>
+                            {% endif %}
+                        </ul>
+                        <!-- Post Navigation End -->
+                    </article>
+                    <!-- Post Comments Start -->
+                    {%- include disqus_comments.html -%}
+                    <!-- post details -->
+                </div>
+                <div class="col-lg-4">
+                    {%- include blog-sidebar.html -%}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {% comment %} Start cta3 {% endcomment %}
+    {% include cta2.html %}
+    {% comment %} End cta3 {% endcomment %}
+
+    {% comment %} Start footer3 {% endcomment %}
+    {% include footer3.html %}
+    {% comment %} End footer3 {% endcomment %}
+
+    <a href="#" data-target="html" class="back-to-top ft-sticky">
+        <i class="fal fa-long-arrow-up">
+        </i>
+    </a>
+    {% include scripts.html %}
+</body>
+
+</html>

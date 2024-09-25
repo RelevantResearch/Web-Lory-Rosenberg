@@ -1,0 +1,19 @@
+---
+#compress
+---
+<!DOCTYPE html>
+<html lang="{{ site.data.ui.locale | slice: 0,2 | default: "en" }}">
+{% include head.html %}
+<body>
+    <div class="preloader">
+        <img src="{{'assets/images/preloader.svg' | relative_url }}" alt="preloader" />
+    </div>
+    {{ content }}
+    <a href="#" data-target="html" class="back-to-top ft-sticky">
+        <i class="fal fa-long-arrow-up">
+        </i>
+    </a>
+    {% include scripts.html %}
+</body>
+
+</html>

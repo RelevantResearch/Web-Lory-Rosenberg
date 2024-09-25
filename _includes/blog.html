@@ -1,0 +1,44 @@
+<section class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title wow fadeInDown">
+                    <p class="subtitle"><i class="fal fa-book"></i>{{ site.data.ui.blog.subtitle }}</p>
+                    <h3 class="title">{{ site.data.ui.blog.title }}</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            {%- for post in site.posts limit: 3 -%}
+            <div class="col-xl-4 col-md-6">
+                <article class="post wow fadeInUp" data-wow-delay=".2s">
+                    <div class="post_img">
+                        <img src="{{post.image | relative_url }}" alt="img" class="image-fit" />
+                    </div>
+                    <div class="post_caption">
+                        <ul class="post_meta">
+                            <li>
+                                <i class="fal fa-calendar-alt"></i>
+                                {{ post.date | date_to_string }}
+                            </li>
+                            <li>
+                                <i class="fal fa-comment-lines"></i>
+                                {{ post.author | default: "Admin" }}
+                            </li>
+                        </ul>
+                        <h4 class="post_title">
+                            <a href="{{ post.url }}">{{ post.title }}</a>
+                        </h4>
+                        <p class="post_text">{{ post.description }}</p>
+                        <a href="{{ post.url }}" class="thm-btn bg-thm-color-white thm-color-one btn-border btn-rounded">
+                            Read More
+                            <i class="fal fa-chevron-right ml-2"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            {%- endfor -%}
+        </div>
+    </div>
+</section>

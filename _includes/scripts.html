@@ -1,0 +1,38 @@
+    {% comment %} Jquery {% endcomment %}
+    <script src="{{ 'assets/js/plugins/jquery-3.6.0.min.js' | relative_url }}"></script>
+    {% comment %} Bootstrap css {% endcomment %}
+    <script src="{{ 'assets/js/plugins/bootstrap.bundle.min.js' | relative_url }}"></script>
+    {% comment %} Slick slider {% endcomment %}
+    <script src="{{ 'assets/js/plugins/slick.min.js' | relative_url }}"></script>
+    {% comment %} Imagesloaded {% endcomment %}
+    <script src="{{ 'assets/js/plugins/imagesloaded.min.js' | relative_url }}"></script>
+    {% comment %} Isotope {% endcomment %}
+    <script src="{{ 'assets/js/plugins/isotope.pkgd.min.js' | relative_url }}"></script>
+    {% comment %} Jquery {% endcomment %}
+    <script src="{{ 'assets/js/plugins/jquery.magnific-popup.min.js' | relative_url }}"></script>
+    {% comment %} Jquery {% endcomment %}
+    <script src="{{ 'assets/js/plugins/jquery.counterup.min.js' | relative_url }}"></script>
+    {% comment %} Jquery {% endcomment %}
+    <script src="{{ 'assets/js/plugins/jquery.inview.min.js' | relative_url }}"></script>
+    {% comment %} Jquery {% endcomment %}
+    <script src="{{ 'assets/js/plugins/jquery.easypiechart.js' | relative_url }}"></script>
+    {% comment %} Jquery {% endcomment %}
+    <script src="{{ 'assets/js/plugins/jquery.countdown.min.js' | relative_url }}"></script>
+    {% comment %} WOW Js {% endcomment %}
+    <script src="{{ 'assets/js/plugins/wow.min.js' | relative_url }}"></script>
+    {% comment %} ajaxchimp Js {% endcomment %}
+    <script src="{{ 'assets/js/plugins/jquery.ajaxchimp.js' | relative_url }}"></script>
+    {% comment %} custom Js {% endcomment %}
+    <script src="{{ 'assets/js/custom.js' | relative_url }}"></script>
+    {%- if page.map -%}
+    <!-- Maps -->
+    <script>
+        window.localStorage.setItem("map_lat", "{{site.map.lat}}");
+        window.localStorage.setItem("map_lng", "{{site.map.lng}}");
+    </script>
+    <script src="{{ 'assets/js/plugins/leaflet.js' | relative_url }}"></script>
+    <script src="{{ 'assets/js/map.js' | relative_url }}"></script>
+    <!-- Form -->
+    <script src="{{ 'assets/js/plugins/jquery.validate.min.js' | relative_url }}"></script>
+    <script src="{{ 'assets/js/form.js' | relative_url }}"></script>
+    {%- endif -%}
