@@ -1,15 +1,14 @@
 about:
-  image: assets/images/about/image_1.jpg
+  image: assets/images/about/profile.jpeg
   image2: assets/images/about/image_2.jpg
-  subtitle: What We Provide
-  title: We Care About Your Life For Better.
+  subtitle:
+  title: Mentoring the Next Generation of Immigration Advocates
   description: >-
-    Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
-    nihil molestiae consequatue velillum
-  list1_title: Master Certified Coach
-  list1_description: Quis autem vel eum iure reprehenderit quein ea voluptate velit esse quam
-  list2_title: Coach Certification Program
-  list2_description: Quis autem vel eum iure reprehenderit quein ea voluptate velit esse quam
+    Handling immigration appeals to the BIA and circuit courts is complex and requires specialized knowledge that many attorneys don’t have. While outsourcing the work is an option, it leaves you without the skills needed for future cases. Lory, a seasoned expert who has served on the BIA, offers personalized mentorship that empowers you to confidently manage these high-stakes cases yourself, ensuring both immediate success and long-term professional growth.
+  # list1_title: Master Certified Coach
+  # list1_description: Quis autem vel eum iure reprehenderit quein ea voluptate velit esse quam
+  # list2_title: Coach Certification Program
+  # list2_description: Quis autem vel eum iure reprehenderit quein ea voluptate velit esse quam
 
 about2:
   image: assets/images/about/about.jpg
@@ -88,28 +87,16 @@ about4:
   button_link: about.html
 
 about_me:
-  subtitle: About Me
-  title: Top Lessons For Getting You Back On Track.
+  subtitle: 
+  title: About Me 
   description: >-
-    Sed ut perspiciatis unde omnis iste natus voluptatem accusantiue doloremque
-    laudantium totam aperiam eaque quae abillo inventore veritatis et quasi
-    architecto beatae vitae dicta
-  about: |-
-    <li >
-     Coach Mentoring 
-    </li>
-    <li >
-     Career Development 
-    </li>
-    <li >
-     Ask Consulatncy 
-    </li>
-    <li >
-     Online Learning 
-    </li>
+    I’m Lory Rosenberg, and my passion is helping immigration attorneys unlock their full potential—both professionally and personally. With a deep commitment to social justice and equality, I’ve spent my career advocating for fairness and empowering others to do the same. I believe that great legal representation goes beyond technical skill; it’s about compassion, integrity, and the courage to stand up for what’s right.
+    Having grown up in the Midwest with a strong sense of justice, my path has always been guided by a desire to make a real difference in the world. I work with attorneys who are navigating complex immigration appeals, not just to teach them the mechanics of the law, but to inspire them to pursue excellence in all areas of their practice. I mentor them on setting meaningful goals, finding balance, and cultivating resilience in the face of challenges.
+    I’m here to help you grow, not only as an attorney but as a whole person—so you can offer the best to your clients and make a lasting impact on the lives you touch.
+  about: 
   contact: 'Contact Me '
   contact_link: contact.html
-  image2: assets/images/about/about_me.png
+  image2: assets/images/about/1692719928669.jpeg
   tagline2: |-
     Business<br /> Consulting
 
@@ -120,17 +107,16 @@ about_me:
 banner:
   title: |-
     <span >
-    Modern Life
+    Your Mentor for 
     </span>
-     Coach School Podcast
-  description: >-
-    Sed ut perspiciatis unde omnis iste natus error voluptatem accan tium
-    doloremque laudantium totam rem aperiam
-  to_coach: 'Get Coach '
-  to_coach_link: about-2.html
-  image: assets/images/banner/banner_img.png
-  youtube: Watch Videos
-  youtube_link: 'https://www.youtube.com/watch?v=TKnufs85hXk'
+    Mastering Immigration Appeals
+  # description:
+  # to_coach: 'Get Coach '
+  # to_coach_link: about-2.html
+  image: assets/images/banner/family.jpg
+  image2: assets/images/banner/family_school.jpg
+  # youtube: Watch Videos
+  # youtube_link: 'https://www.youtube.com/watch?v=TKnufs85hXk'
 
 banner2:
   tagline: What We Provide
@@ -655,27 +641,27 @@ faqs:
 #
 #
 ##########################################################
-features2:
-  - icon: assets/images/icons/icon_10.png
-    name: Exclusive Coach
-    description: >-
-      Sed ut perspicia unde omnis iste natus error sit voluptatem accusantium
-      doloreue
-  - icon: assets/images/icons/icon_11.png
-    name: Consulting
-    description: >-
-      Sed ut perspicia unde omnis iste natus error sit voluptatem accusantium
-      doloreue
-  - icon: assets/images/icons/icon_12.png
-    name: Live Trainings
-    description: >-
-      Sed ut perspicia unde omnis iste natus error sit voluptatem accusantium
-      doloreue
-  - icon: assets/images/icons/icon_13.png
-    name: Marketing Goals
-    description: >-
-      Sed ut perspicia unde omnis iste natus error sit voluptatem accusantium
-      doloreue
+# features2:
+#   - icon: assets/images/icons/icon_10.png
+#     name: Exclusive Coach
+#     description: >-
+#       Sed ut perspicia unde omnis iste natus error sit voluptatem accusantium
+#       doloreue
+#   - icon: assets/images/icons/icon_11.png
+#     name: Consulting
+#     description: >-
+#       Sed ut perspicia unde omnis iste natus error sit voluptatem accusantium
+#       doloreue
+#   - icon: assets/images/icons/icon_12.png
+#     name: Live Trainings
+#     description: >-
+#       Sed ut perspicia unde omnis iste natus error sit voluptatem accusantium
+#       doloreue
+#   - icon: assets/images/icons/icon_13.png
+#     name: Marketing Goals
+#     description: >-
+#       Sed ut perspicia unde omnis iste natus error sit voluptatem accusantium
+#       doloreue
 
 ##########################################################
 #
@@ -914,7 +900,7 @@ services:
 site:
   name : "Wellco"
   address: '256 Elizaberth Ave Str, Brooklyn, CA, 90025'
-  copywrite: "© 2021 <a href=\"#\">Wellco</a>. All Rights Reserved, Design By Ducor "
+  copywrite: "© 2024 Lory D. Rosenberg. Website by <a href=\"https://relevant-research.com\"> Relevant Research</a>."
   email: example@example.com
   favicon: 'assets/images/favicon.ico'
   logo: assets/images/logo.png
@@ -1177,12 +1163,11 @@ video:
     youtube: 'https://www.youtube.com/watch?v=TKnufs85hXk'
 
 video_quote:
-    subtitle: "Admission Going On"
-    title: 'Find Your Best Coach With Wellco'
-    description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudtium totam rem aperiam eaque quae'
-    submit: "Enroll Now "
+    title: 'How this works...'
+    description: 'Lory offers free consultations to assess your needs and provide a tailored mentoring plan. With flexible rates and full beginning-to-end guidance, she’ll walk you through every step of the immigration appeals process, sharing insider tips only seasoned attorneys know. Whether you’re new to appeals or looking to sharpen your skills, Lory’s expert mentorship will empower you to handle even the toughest cases with confidence. Ready to take the next step? Contact Lory today to get started!'
+    submit: "Let's get Started!"
     image: assets/images/video_img_3.png
-    youtube: 'https://www.youtube.com/watch?v=TKnufs85hXk'
+    youtube: 
 
 #####################################################
 #
@@ -1204,11 +1189,13 @@ why_us_lists:
   - title: Process Emotion And Create More Energy
 
 whyus:
-    subtitle: "What We Offer"
-    title: 'People Why Choose Our Coachs'
-    list1_title: 'Sed ut perspiciatis unde omnis iste natus sit voluptatemec accusantium doloremque laudantium'
-    list2_title: 'Sed ut perspiciatis unde omnis iste natus sit voluptatemec accusantium doloremque laudantium'
-    list3_title: 'Sed ut perspiciatis unde omnis iste natus sit voluptatemec accusantium doloremque laudantium'
+    title: 'Why Lory?'
+    list1_title: 'Former BIA Board Member'
+    list1_subtitle: 'As the BIA’s dissenter in chief from xxxx to xxxx, Lory has years of inside knowledge that she puts to work to help you...'
+    list2_title: 'Long-Time Immigration Advocate/Attorney'
+    list2_subtitle: 'As the BIA’s dissenter in chief from xxxx to xxxx, Lory has years of inside knowledge that she puts to work to help you...'
+    list3_title: 'Expertise & Training in Mentorship (Certification?)'
+    list3_subtitle: 'In addition to her immigration work, Lory is also a trained/certified/experienced coach with a passion for working with attorneys and encouraging them to bring their full selves into their work.... challenging misbeliefs and transforming personal challenges into an advantage for their clients, their business, and most importantly themselves.'
     plan_start: 'The Life Coach School Has The Most Amazing Tools And Cutting-Edge Training'
 
 why_chose_us:
