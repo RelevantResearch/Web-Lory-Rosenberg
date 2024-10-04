@@ -1,5 +1,5 @@
 about:
-  image: assets/images/about/1692719928669.jpeg
+  image: assets/images/banner/family_school.jpg
   image2: assets/images/about/image_2.jpg
   subtitle:
   title: Mentoring the Next Generation of Immigration Advocates
@@ -39,7 +39,7 @@ about3:
     <li >
      Financial Solutions 
     </li>
-  url: 'Learn More '
+  url: "Learn More "
   url_link: about.html
 
 ###############################################
@@ -57,7 +57,6 @@ features3:
   - name: Coaching Scholars
     description: Quis autem reprehenderit quein voluptate velit esseua
 
-
 #####################################################################
 #
 #
@@ -68,7 +67,7 @@ about4:
   image: assets/images/about/about_img_2.jpg
   tagline: Who We Are
   title: Upgrade Your Skills Build Your Life
-  youtube: 'https://www.youtube.com/watch?v=TKnufs85hXk'
+  youtube: "https://www.youtube.com/watch?v=TKnufs85hXk"
   description: >-
     Quis autem vel eum iure reprehenderit qui in ea voluptate esse quam nihil
     molestiae conseq uaturvel illum qui dolorem eum fugiat quo voluptas nulla
@@ -83,18 +82,18 @@ about4:
     <li >
      Financial Solutions 
     </li>
-  button: 'Learn More '
+  button: "Learn More "
   button_link: about.html
 
 about_me:
-  subtitle: 
-  title: About Me 
+  subtitle:
+  title: About Me
   description: >-
     I’m Lory Rosenberg, and my passion is helping immigration attorneys unlock their full potential—both professionally and personally. With a deep commitment to social justice and equality, I’ve spent my career advocating for fairness and empowering others to do the same. I believe that great legal representation goes beyond technical skill; it’s about compassion, integrity, and the courage to stand up for what’s right.
     Having grown up in the Midwest with a strong sense of justice, my path has always been guided by a desire to make a real difference in the world. I work with attorneys who are navigating complex immigration appeals, not just to teach them the mechanics of the law, but to inspire them to pursue excellence in all areas of their practice. I mentor them on setting meaningful goals, finding balance, and cultivating resilience in the face of challenges.
     I’m here to help you grow, not only as an attorney but as a whole person—so you can offer the best to your clients and make a lasting impact on the lives you touch.
-  about: 
-  contact: 'Contact Me '
+  about:
+  contact: "Contact Me "
   contact_link: contact.html
   image2: assets/images/about/1692719928669.jpeg
   tagline2: |-
@@ -113,7 +112,7 @@ banner:
   # description:
   # to_coach: 'Get Coach '
   # to_coach_link: about-2.html
-  image: assets/images/banner/family.jpg
+  image: assets/images/about/1692719928669.jpeg
   image2: assets/images/banner/family_school.jpg
   # youtube: Watch Videos
   # youtube_link: 'https://www.youtube.com/watch?v=TKnufs85hXk'
@@ -124,18 +123,18 @@ banner2:
   description: >-
     Sed ut perspiciatis unde omnis iste natus error voluptatem accan tium
     doloremque laudantium totam rem aperiam
-  url: 'Get Coach '
+  url: "Get Coach "
   url_link: about-2.html
-  url2: 'Learn More '
+  url2: "Learn More "
   url2_link: about.html
-  count: '0'
+  count: "0"
   info: |-
     Success<br />
      Result
 
 banner3:
   title: Find Your Best Business Coach
-  button: 'Search Now '
+  button: "Search Now "
   success: |-
     <span >
     89
@@ -164,93 +163,93 @@ coach:
   description: The Life Coach School Has The Most Amazing Tools And Cutting-Edge Training
 
 coaches:
-  - image: assets/images/coach/1.jpg 
+  - image: assets/images/coach/1.jpg
     price: Free
-    title: 'Most Powerful Thing You Have Self Coaching Scholars' 
+    title: "Most Powerful Thing You Have Self Coaching Scholars"
     category: Business
     url: "#"
     rating: 4
     author_image: assets/images/author/1.jpg
-    author_name: 'Wilbert A. Toney'
-  - image: assets/images/coach/2.jpg 
+    author_name: "Wilbert A. Toney"
+  - image: assets/images/coach/2.jpg
     price: $50
-    title: 'Coach Certification Programs Most Powerful Coach' 
+    title: "Coach Certification Programs Most Powerful Coach"
     category: Business
     url: "#"
     rating: 4
     author_image: assets/images/author/2.jpg
-    author_name: 'Emma H. Parish'
-  - image: assets/images/coach/3.jpg 
+    author_name: "Emma H. Parish"
+  - image: assets/images/coach/3.jpg
     price: Free
-    title: 'Matter How Great Your Life Al Ready, We’ll Give Syatem' 
+    title: "Matter How Great Your Life Al Ready, We’ll Give Syatem"
     category: Business
     url: "#"
     rating: 4
     author_image: assets/images/author/3.jpg
-    author_name: 'Junior N. West'
-  - image: assets/images/coach/4.jpg 
+    author_name: "Junior N. West"
+  - image: assets/images/coach/4.jpg
     price: Free
-    title: 'Most Powerful Thing You Have Self Coaching Scholars' 
+    title: "Most Powerful Thing You Have Self Coaching Scholars"
     category: Business
     url: "#"
     rating: 4
     author_image: assets/images/author/1.jpg
-    author_name: 'Wilbert A. Toney'
-  - image: assets/images/coach/5.jpg 
+    author_name: "Wilbert A. Toney"
+  - image: assets/images/coach/5.jpg
     price: $50
-    title: 'Coach Certification Programs Most Powerful Coach' 
+    title: "Coach Certification Programs Most Powerful Coach"
     category: Business
     url: "#"
     rating: 4
     author_image: assets/images/author/2.jpg
-    author_name: 'Emma H. Parish'
-  - image: assets/images/coach/6.jpg 
+    author_name: "Emma H. Parish"
+  - image: assets/images/coach/6.jpg
     price: Free
-    title: 'Matter How Great Your Life Al Ready, We’ll Give Syatem' 
+    title: "Matter How Great Your Life Al Ready, We’ll Give Syatem"
     category: Business
     url: "#"
     rating: 4
     author_image: assets/images/author/3.jpg
-    author_name: 'Junior N. West'
-  - image: assets/images/coach/7.jpg 
+    author_name: "Junior N. West"
+  - image: assets/images/coach/7.jpg
     price: Free
-    title: 'Most Powerful Thing You Have Self Coaching Scholars' 
+    title: "Most Powerful Thing You Have Self Coaching Scholars"
     category: Business
     url: "#"
     rating: 4
     author_image: assets/images/author/1.jpg
-    author_name: 'Wilbert A. Toney'
-  - image: assets/images/coach/8.jpg 
+    author_name: "Wilbert A. Toney"
+  - image: assets/images/coach/8.jpg
     price: $45
-    title: 'Coach Certification Programs Most Powerful Coach' 
+    title: "Coach Certification Programs Most Powerful Coach"
     category: Business
     url: "#"
     rating: 4
     author_image: assets/images/author/2.jpg
-    author_name: 'Emma H. Parish'
-  - image: assets/images/coach/2.jpg 
+    author_name: "Emma H. Parish"
+  - image: assets/images/coach/2.jpg
     price: $93
-    title: 'Matter How Great Your Life Al Ready, We’ll Give Syatem' 
+    title: "Matter How Great Your Life Al Ready, We’ll Give Syatem"
     category: Business
     rating: 4
     author_image: assets/images/author/3.jpg
-    author_name: 'Junior N. West'
+    author_name: "Junior N. West"
 
-  - image: assets/images/video/8.jpg 
+  - image: assets/images/video/8.jpg
     price: $93
-    title: 'Matter How Great Your Life Al Ready, We’ll Give Syatem' 
+    title: "Matter How Great Your Life Al Ready, We’ll Give Syatem"
     category: Business
     rating: 4
     author_image: assets/images/author/3.jpg
-    author_name: 'Junior N. West'
-  
-  - image: assets/images/video/9.jpg 
+    author_name: "Junior N. West"
+
+  - image: assets/images/video/9.jpg
     price: $93
-    title: 'Matter How Great Your Life Al Ready, We’ll Give Syatem' 
+    title: "Matter How Great Your Life Al Ready, We’ll Give Syatem"
     category: Business
     rating: 4
     author_image: assets/images/author/3.jpg
-    author_name: 'Junior N. West'
+    author_name: "Junior N. West"
 
 ##########################################################
 #
@@ -258,24 +257,24 @@ coaches:
 ##########################################################
 contact_form:
   subtitle: "Drop A Message"
-  title: 'Have Any Questions Let’s Started Talk'
+  title: "Have Any Questions Let’s Started Talk"
 contact_map:
-  subtitle: 'Contact Us'
-  title: 'Have Any Courses Get In Touch'
+  subtitle: "Contact Us"
+  title: "Have Any Courses Get In Touch"
   location: Location
-  email: 'Email Address'
-  phone: 'Contact Us'
+  email: "Email Address"
+  phone: "Contact Us"
   location_value: 354 Oakridge, Camden NJ 08102 - USA
-  email_value: 'supportcoachinfo@gmail.com'
-  phone_value: '<strong>Mobile: </strong> +012 (345) 789 99<br/><strong>Hotline: </strong> +563 789 55'
+  email_value: "supportcoachinfo@gmail.com"
+  phone_value: "<strong>Mobile: </strong> +012 (345) 789 99<br/><strong>Hotline: </strong> +563 789 55"
 
 contact_page:
   tagline: "Support Team"
-  title: 'We Have a Professional Support Team'
-  csupport: 'Customer Support'
-  description: 'Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium'
-  have_uestions: 'Have Any Questions'
-  description2: 'Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium'
+  title: "We Have a Professional Support Team"
+  csupport: "Customer Support"
+  description: "Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium"
+  have_uestions: "Have Any Questions"
+  description2: "Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium"
 
 ##########################################################
 #
@@ -301,7 +300,7 @@ counters:
 ##########################################################
 cta:
   subtitle: "Our Professionals"
-  title: 'Do You Want to Transform Your Life For Better ?'
+  title: "Do You Want to Transform Your Life For Better ?"
   contact: "Contact Us "
   image: assets/images/cta_image.png
   button: "Contact Us"
@@ -310,7 +309,7 @@ cta5:
   contact: "Contact Us "
   contact_link: contact.html
   image: assets/images/cta_image.png
-    
+
 ############################################
 #
 #
@@ -319,76 +318,76 @@ cta5:
 events:
   - image: assets/images/event/1.jpg
     price: Free
-    date: '2022-05-25 00:00:00'
+    date: "2022-05-25 00:00:00"
     title: Education Workshop
     location: Italy, France
-                                      
+
   - image: assets/images/event/2.jpg
     price: $59
-    date: '2022-05-25 00:00:00'
+    date: "2022-05-25 00:00:00"
     title: Physical Exercises
     location: Buenos, Argentina
-                                      
+
   - image: assets/images/event/3.jpg
     price: Free
-    date: '2022-05-25 00:00:00'
+    date: "2022-05-25 00:00:00"
     title: Mordern Lifestyle
     location: Nairobi, Kenya
-                                      
+
   - image: assets/images/event/4.jpg
     price: $99
-    date: '2022-05-25 00:00:00'
+    date: "2022-05-25 00:00:00"
     title: Business Consulting
     location: Maxico City, Maxico
-                                      
+
   - image: assets/images/event/5.jpg
     price: $59
-    date: '2022-05-25 00:00:00'
+    date: "2022-05-25 00:00:00"
     title: Fashion Design, Art
     location: Buenos, Argentina
-                                      
+
   - image: assets/images/event/6.jpg
     price: Free
-    date: '2022-05-25 00:00:00'
+    date: "2022-05-25 00:00:00"
     title: Morder Lifestyle
     location: Nairobi, Kenya
-                                      
+
   - image: assets/images/event/7.jpg
     price: $99
-    date: '2022-05-25 00:00:00'
+    date: "2022-05-25 00:00:00"
     title: Fashion Lifestyle
     location: Mexico City, Mexico
-                                      
+
   - image: assets/images/event/8.jpg
     price: $59
-    date: '2022-05-25 00:00:00'
+    date: "2022-05-25 00:00:00"
     title: Food Workshop
     location: Buenos, Argentina
-                                      
+
   - image: assets/images/event/9.jpg
     price: $39
-    date: '2022-05-25 00:00:00'
+    date: "2022-05-25 00:00:00"
     title: Films Conference
     location: Nairobi, Kenya
-                                      
+
   - image: assets/images/event/10.jpg
     price: $99
-    date: '2022-05-25 00:00:00'
+    date: "2022-05-25 00:00:00"
     title: Fashion Lifestyle
     location: Mexico City, Mexico
-                                      
+
   - image: assets/images/event/11.jpg
     price: $59
-    date: '2022-05-25 00:00:00'
+    date: "2022-05-25 00:00:00"
     title: Food Workshop
     location: Buenos, Argentina
-                                      
+
   - image: assets/images/event/12.jpg
     price: $39
-    date: '2022-05-25 00:00:00'
+    date: "2022-05-25 00:00:00"
     title: Films Conference
     location: Nairobi, Kenya
-                                      
+
 #################################################
 #
 #
@@ -410,7 +409,7 @@ faq:
 
 faqs:
   - ask: We Teach You How To General Yourself.
-    category: 'General'
+    category: "General"
     answer: >-
       Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
       doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
@@ -418,7 +417,7 @@ faqs:
       ipsam tatem quia voluptas sit aspernatur aut odit aut fugit sed quia
       consequuntur
   - ask: We Teach You How To Feel Better.
-    category: 'General'
+    category: "General"
     answer: >-
       Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
       doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
@@ -426,7 +425,7 @@ faqs:
       ipsam tatem quia voluptas sit aspernatur aut odit aut fugit sed quia
       consequuntur
   - ask: We Teach You How To Take Massive Action.
-    category: 'General'
+    category: "General"
     answer: >-
       Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
       doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
@@ -434,7 +433,7 @@ faqs:
       ipsam tatem quia voluptas sit aspernatur aut odit aut fugit sed quia
       consequuntur
   - ask: Be Less Frustrated By Learning Relationship Tools
-    category: 'General'
+    category: "General"
     answer: >-
       Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
       doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
@@ -442,15 +441,15 @@ faqs:
       ipsam tatem quia voluptas sit aspernatur aut odit aut fugit sed quia
       consequuntur
   - ask: Motivate Yourself To Get More Done In Less Time
-    category: 'General'
+    category: "General"
     answer: >-
       Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
       doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
       veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
       ipsam tatem quia voluptas sit aspernatur aut odit aut fugit sed quia
       consequuntur
-  - ask: 'Ease Anxiety, Stress, Worry, And Boredom'
-    category: 'General'
+  - ask: "Ease Anxiety, Stress, Worry, And Boredom"
+    category: "General"
     answer: >-
       Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
       doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
@@ -458,7 +457,7 @@ faqs:
       ipsam tatem quia voluptas sit aspernatur aut odit aut fugit sed quia
       consequuntur
   - ask: Process Emotion And Create More Energy
-    category: 'General'
+    category: "General"
     answer: >-
       Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
       doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
@@ -467,7 +466,7 @@ faqs:
       consequuntur
 
   - ask: We Teach You How To Coach Yourself.
-    category: 'coach'
+    category: "coach"
     answer: >-
       Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
       doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
@@ -475,7 +474,7 @@ faqs:
       ipsam tatem quia voluptas sit aspernatur aut odit aut fugit sed quia
       consequuntur
   - ask: We Teach You How To Feel Better.
-    category: 'coach'
+    category: "coach"
     answer: >-
       Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
       doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
@@ -483,7 +482,7 @@ faqs:
       ipsam tatem quia voluptas sit aspernatur aut odit aut fugit sed quia
       consequuntur
   - ask: We Teach You How To Take Massive Action.
-    category: 'coach'
+    category: "coach"
     answer: >-
       Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
       doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
@@ -491,7 +490,7 @@ faqs:
       ipsam tatem quia voluptas sit aspernatur aut odit aut fugit sed quia
       consequuntur
   - ask: Be Less Frustrated By Learning Relationship Tools
-    category: 'coach'
+    category: "coach"
     answer: >-
       Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
       doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
@@ -499,15 +498,15 @@ faqs:
       ipsam tatem quia voluptas sit aspernatur aut odit aut fugit sed quia
       consequuntur
   - ask: Motivate Yourself To Get More Done In Less Time
-    category: 'coach'
+    category: "coach"
     answer: >-
       Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
       doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
       veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
       ipsam tatem quia voluptas sit aspernatur aut odit aut fugit sed quia
       consequuntur
-  - ask: 'Ease Anxiety, Stress, Worry, And Boredom'
-    category: 'coach'
+  - ask: "Ease Anxiety, Stress, Worry, And Boredom"
+    category: "coach"
     answer: >-
       Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
       doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
@@ -515,7 +514,7 @@ faqs:
       ipsam tatem quia voluptas sit aspernatur aut odit aut fugit sed quia
       consequuntur
   - ask: Process Emotion And Create More Energy
-    category: 'coach'
+    category: "coach"
     answer: >-
       Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
       doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
@@ -523,7 +522,7 @@ faqs:
       ipsam tatem quia voluptas sit aspernatur aut odit aut fugit sed quia
       consequuntur
   - ask: We Teach You How To Advisors Yourself.
-    category: 'Advisors'
+    category: "Advisors"
     answer: >-
       Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
       doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
@@ -531,7 +530,7 @@ faqs:
       ipsam tatem quia voluptas sit aspernatur aut odit aut fugit sed quia
       consequuntur
   - ask: We Teach You How To Feel Better.
-    category: 'Advisors'
+    category: "Advisors"
     answer: >-
       Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
       doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
@@ -539,7 +538,7 @@ faqs:
       ipsam tatem quia voluptas sit aspernatur aut odit aut fugit sed quia
       consequuntur
   - ask: We Teach You How To Take Massive Action.
-    category: 'Advisors'
+    category: "Advisors"
     answer: >-
       Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
       doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
@@ -547,7 +546,7 @@ faqs:
       ipsam tatem quia voluptas sit aspernatur aut odit aut fugit sed quia
       consequuntur
   - ask: Be Less Frustrated By Learning Relationship Tools
-    category: 'Advisors'
+    category: "Advisors"
     answer: >-
       Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
       doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
@@ -555,15 +554,15 @@ faqs:
       ipsam tatem quia voluptas sit aspernatur aut odit aut fugit sed quia
       consequuntur
   - ask: Motivate Yourself To Get More Done In Less Time
-    category: 'Advisors'
+    category: "Advisors"
     answer: >-
       Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
       doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
       veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
       ipsam tatem quia voluptas sit aspernatur aut odit aut fugit sed quia
       consequuntur
-  - ask: 'Ease Anxiety, Stress, Worry, And Boredom'
-    category: 'Advisors'
+  - ask: "Ease Anxiety, Stress, Worry, And Boredom"
+    category: "Advisors"
     answer: >-
       Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
       doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
@@ -571,7 +570,7 @@ faqs:
       ipsam tatem quia voluptas sit aspernatur aut odit aut fugit sed quia
       consequuntur
   - ask: Process Emotion And Create More Energy
-    category: 'Advisors'
+    category: "Advisors"
     answer: >-
       Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
       doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
@@ -580,7 +579,7 @@ faqs:
       consequuntur
 
   - ask: We Teach You How To Tutorials Yourself.
-    category: 'Tutorials'
+    category: "Tutorials"
     answer: >-
       Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
       doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
@@ -588,7 +587,7 @@ faqs:
       ipsam tatem quia voluptas sit aspernatur aut odit aut fugit sed quia
       consequuntur
   - ask: We Teach You How To Feel Better.
-    category: 'Tutorials'
+    category: "Tutorials"
     answer: >-
       Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
       doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
@@ -596,7 +595,7 @@ faqs:
       ipsam tatem quia voluptas sit aspernatur aut odit aut fugit sed quia
       consequuntur
   - ask: We Teach You How To Take Massive Action.
-    category: 'Tutorials'
+    category: "Tutorials"
     answer: >-
       Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
       doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
@@ -604,7 +603,7 @@ faqs:
       ipsam tatem quia voluptas sit aspernatur aut odit aut fugit sed quia
       consequuntur
   - ask: Be Less Frustrated By Learning Relationship Tools
-    category: 'Tutorials'
+    category: "Tutorials"
     answer: >-
       Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
       doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
@@ -612,15 +611,15 @@ faqs:
       ipsam tatem quia voluptas sit aspernatur aut odit aut fugit sed quia
       consequuntur
   - ask: Motivate Yourself To Get More Done In Less Time
-    category: 'Tutorials'
+    category: "Tutorials"
     answer: >-
       Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
       doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
       veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
       ipsam tatem quia voluptas sit aspernatur aut odit aut fugit sed quia
       consequuntur
-  - ask: 'Ease Anxiety, Stress, Worry, And Boredom'
-    category: 'Tutorials'
+  - ask: "Ease Anxiety, Stress, Worry, And Boredom"
+    category: "Tutorials"
     answer: >-
       Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
       doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
@@ -628,14 +627,13 @@ faqs:
       ipsam tatem quia voluptas sit aspernatur aut odit aut fugit sed quia
       consequuntur
   - ask: Process Emotion And Create More Energy
-    category: 'Tutorials'
+    category: "Tutorials"
     answer: >-
       Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
       doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
       veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
       ipsam tatem quia voluptas sit aspernatur aut odit aut fugit sed quia
       consequuntur
-
 
 ##########################################################
 #
@@ -686,26 +684,26 @@ features:
 ##
 ########################################
 footer:
-    menu1: 'Our Coach'
-    menu2: 'About Us'
-    menu3: 'Apps Download'
-    download_intro: 'Sed ut perspici unde omnis iste natus error sit voluptatem accus'
-    google_store_link: "#"
-    apple_store_link: "#"
-    newsletter: Newsletter
-    newsletter_intro: 'Sed ut perspici unde omnis iste natus error sit voluptatem accus'
-    newsletter_submit: "Subscribe Now"
-  
+  menu1: "Our Coach"
+  menu2: "About Us"
+  menu3: "Apps Download"
+  download_intro: "Sed ut perspici unde omnis iste natus error sit voluptatem accus"
+  google_store_link: "#"
+  apple_store_link: "#"
+  newsletter: Newsletter
+  newsletter_intro: "Sed ut perspici unde omnis iste natus error sit voluptatem accus"
+  newsletter_submit: "Subscribe Now"
+
 # admission
 admission:
-  title: 'Admission Going On, Hurry To Enroll Now'
-  end_time: '2023/05/06'
+  title: "Admission Going On, Hurry To Enroll Now"
+  end_time: "2023/05/06"
 newsletter:
   subtitle: "Our Newsletters"
-  title: 'Get More Every Single Update To Join Our Newsletters'
+  title: "Get More Every Single Update To Join Our Newsletters"
   button: "Subscribe Now "
 plane:
-  title: 'The Life Coach School Has The Most Amazing Tools And Cutting-Edge Training'
+  title: "The Life Coach School Has The Most Amazing Tools And Cutting-Edge Training"
 
 ###############################################################
 #
@@ -714,54 +712,54 @@ plane:
 ###############################################################
 tutorial-categories: [Business, Lifestyle, Goals, Fashion]
 tutorials:
-    - image: assets/images/video/4.jpg
-      youtube: "https://www.youtube.com/watch?v=TKnufs85hXk"
-      title: 'How To Gain Knowledge'
-      author: 'By Frank L. Pierce'
-      category: 'lifestyle fashion business' 
-      price: Free
-    - image: assets/images/video/5.jpg
-      youtube: "https://www.youtube.com/watch?v=TKnufs85hXk"
-      title: 'How To Fit Your Health'
-      author: 'By Janine T. Hostetter'
-      category: 'goals health lifestyle' 
-      price:  $50 
-    - image: assets/images/video/6.jpg
-      youtube: "https://www.youtube.com/watch?v=TKnufs85hXk"
-      title: 'How To Gain Knowledge'
-      author: 'By Frank L. Pierce'
-      category: 'fashion business goals' 
-      price: Free
-    - image: assets/images/video/7.jpg
-      youtube: "https://www.youtube.com/watch?v=TKnufs85hXk"
-      title: 'Investment Planning'
-      author: 'By Janine T. Hostetter'
-      category: 'health lifestyle fashion' 
-      price:  $50 
-    - image: assets/images/video/4.jpg
-      youtube: "https://www.youtube.com/watch?v=TKnufs85hXk"
-      title: 'How To Gain Knowledge'
-      author: 'By Frank L. Pierce'
-      category: 'business goals health' 
-      price: Free
-    - image: assets/images/video/5.jpg
-      youtube: "https://www.youtube.com/watch?v=TKnufs85hXk"
-      title: 'How To Fit Your Health'
-      author: 'By Janine T. Hostetter'
-      category: 'lifestyle fashion business' 
-      price: Free
-    - image: assets/images/video/6.jpg
-      youtube: "https://www.youtube.com/watch?v=TKnufs85hXk"
-      title: 'How To Gain Knowledge'
-      author: 'By Frank L. Pierce'
-      category: 'goals health lifestyle' 
-      price:  $50 
-    - image: assets/images/video/7.jpg
-      youtube: "https://www.youtube.com/watch?v=TKnufs85hXk"
-      title: 'Investment Planning'
-      author: 'By Janine T. Hostetter'
-      category: 'goals health lifestyle' 
-      price:  $50 
+  - image: assets/images/video/4.jpg
+    youtube: "https://www.youtube.com/watch?v=TKnufs85hXk"
+    title: "How To Gain Knowledge"
+    author: "By Frank L. Pierce"
+    category: "lifestyle fashion business"
+    price: Free
+  - image: assets/images/video/5.jpg
+    youtube: "https://www.youtube.com/watch?v=TKnufs85hXk"
+    title: "How To Fit Your Health"
+    author: "By Janine T. Hostetter"
+    category: "goals health lifestyle"
+    price: $50
+  - image: assets/images/video/6.jpg
+    youtube: "https://www.youtube.com/watch?v=TKnufs85hXk"
+    title: "How To Gain Knowledge"
+    author: "By Frank L. Pierce"
+    category: "fashion business goals"
+    price: Free
+  - image: assets/images/video/7.jpg
+    youtube: "https://www.youtube.com/watch?v=TKnufs85hXk"
+    title: "Investment Planning"
+    author: "By Janine T. Hostetter"
+    category: "health lifestyle fashion"
+    price: $50
+  - image: assets/images/video/4.jpg
+    youtube: "https://www.youtube.com/watch?v=TKnufs85hXk"
+    title: "How To Gain Knowledge"
+    author: "By Frank L. Pierce"
+    category: "business goals health"
+    price: Free
+  - image: assets/images/video/5.jpg
+    youtube: "https://www.youtube.com/watch?v=TKnufs85hXk"
+    title: "How To Fit Your Health"
+    author: "By Janine T. Hostetter"
+    category: "lifestyle fashion business"
+    price: Free
+  - image: assets/images/video/6.jpg
+    youtube: "https://www.youtube.com/watch?v=TKnufs85hXk"
+    title: "How To Gain Knowledge"
+    author: "By Frank L. Pierce"
+    category: "goals health lifestyle"
+    price: $50
+  - image: assets/images/video/7.jpg
+    youtube: "https://www.youtube.com/watch?v=TKnufs85hXk"
+    title: "Investment Planning"
+    author: "By Janine T. Hostetter"
+    category: "goals health lifestyle"
+    price: $50
 
 ##################################################################
 #
@@ -769,58 +767,58 @@ tutorials:
 ###################################################################
 portfolio:
   subtitle: "Project Gallery"
-  title: 'We Have 34520+ Project Successfully Done'
+  title: "We Have 34520+ Project Successfully Done"
   button: "View All Project "
 
 portfolio2:
   subtitle: "Latest video gallery"
-  title: 'We Provide Life-Changing Video Tutorials'
+  title: "We Provide Life-Changing Video Tutorials"
 
 portfolios:
-    - image: assets/images/portfolio/1.jpg
-      title: 'How To Gain Knowledge'
-      category: 'Business' 
-      type: Free
-    - image: assets/images/portfolio/2.jpg
-      title: 'Online Consulting Tutorials'
-      category: 'Business' 
-      type: $59
-    - image: assets/images/portfolio/3.jpg
-      title: 'Marketing Strategy'
-      category: 'Business' 
-      type: Free
-    - image: assets/images/portfolio/4.jpg
-      title: 'Business Consulting'
-      category: 'Life' 
-      type: Free
-    - image: assets/images/portfolio/5.jpg
-      title: 'Well Management'
-      category: 'Business' 
-      type: $59
-    - image: assets/images/portfolio/6.jpg
-      title: Co-Relationship
-      category: 'Business' 
-      type: $59
-    - image: assets/images/portfolio/7.jpg
-      title: 'Relationship Buildup'
-      category: 'Health' 
-      type: Free
-    - image: assets/images/portfolio/8.jpg
-      title: 'Well Management'
-      category: 'Business' 
-      type: $59
-    - image: assets/images/portfolio/9.jpg
-      title: 'Physical Exercise'
-      category: 'Health' 
-      type: Free
+  - image: assets/images/portfolio/1.jpg
+    title: "How To Gain Knowledge"
+    category: "Business"
+    type: Free
+  - image: assets/images/portfolio/2.jpg
+    title: "Online Consulting Tutorials"
+    category: "Business"
+    type: $59
+  - image: assets/images/portfolio/3.jpg
+    title: "Marketing Strategy"
+    category: "Business"
+    type: Free
+  - image: assets/images/portfolio/4.jpg
+    title: "Business Consulting"
+    category: "Life"
+    type: Free
+  - image: assets/images/portfolio/5.jpg
+    title: "Well Management"
+    category: "Business"
+    type: $59
+  - image: assets/images/portfolio/6.jpg
+    title: Co-Relationship
+    category: "Business"
+    type: $59
+  - image: assets/images/portfolio/7.jpg
+    title: "Relationship Buildup"
+    category: "Health"
+    type: Free
+  - image: assets/images/portfolio/8.jpg
+    title: "Well Management"
+    category: "Business"
+    type: $59
+  - image: assets/images/portfolio/9.jpg
+    title: "Physical Exercise"
+    category: "Health"
+    type: Free
 
 ##############################################################
 #
 #
 ##############################################################
 pricing:
-    subtitle: "Pricing Plan"
-    title: 'Simple Pricing Plan For Business Coach'
+  subtitle: "Pricing Plan"
+  title: "Simple Pricing Plan For Business Coach"
 pricings:
   - title: Basic Plan
     subtext: Quis autem veleum iure reprehenderit qui in ea voluptate velit esse
@@ -855,11 +853,10 @@ pricings:
     buy: Select Plan
 
 quote:
-    image: assets/images/quote_img.png
-    subtitle: "Get In Touch"
-    title: 'Do You Have Any Questions Get Free Quote'
-    button: "Send Message "
-
+  image: assets/images/quote_img.png
+  subtitle: "Get In Touch"
+  title: "Do You Have Any Questions Get Free Quote"
+  button: "Send Message "
 
 ##########################################################
 #
@@ -898,31 +895,31 @@ services:
 #
 ##############################################################
 site:
-  name : "Wellco"
-  address: '256 Elizaberth Ave Str, Brooklyn, CA, 90025'
-  copywrite: "© 2024 Lory D. Rosenberg. Website by <a href=\"https://relevant-research.com\"> Relevant Research</a>."
+  name: "Wellco"
+  address: "256 Elizaberth Ave Str, Brooklyn, CA, 90025"
+  copywrite: '© 2024 Lory D. Rosenberg. Website by <a href="https://relevant-research.com"> Relevant Research</a>.'
   email: example@example.com
-  favicon: 'assets/images/favicon.ico'
+  favicon: "assets/images/favicon.ico"
   logo: assets/images/logo.png
   logo2: assets/images/logo-white.png
-  phone: '+012 (345) 678 99'
-  description: 'Sed ut perspiciatis unde omnis iste natus error voluptatem accan tium doloremque laudantium totam rem aperiam'
+  phone: "+012 (345) 678 99"
+  description: "Sed ut perspiciatis unde omnis iste natus error voluptatem accan tium doloremque laudantium totam rem aperiam"
 
 ##############################################################
 #
 #
 ##############################################################
 skill:
-    image: assets/images/skills.jpg
-    subtitle: "Our Skills"
-    title: "We're Awards Winning Coach Academy"
-    description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
+  image: assets/images/skills.jpg
+  subtitle: "Our Skills"
+  title: "We're Awards Winning Coach Academy"
+  description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
 skills:
-  - count: '89'
+  - count: "89"
     name: Business<br /> Consulting
-  - count: '69'
+  - count: "69"
     name: Health<br /> Coaching
-  - count: '96'
+  - count: "96"
     name: Marketing<br /> Strategy
 
 ##############################################################
@@ -946,8 +943,8 @@ subheader:
 #
 #####################################################################
 team:
-    subtitle: "Our Professionals"
-    title: 'Meet Our Professinoal Team Members'
+  subtitle: "Our Professionals"
+  title: "Meet Our Professinoal Team Members"
 
 teams:
   - image: assets/images/team/1.jpg
@@ -1149,25 +1146,24 @@ testimonials:
       Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
       doloremque laudtium totam rem aperiam eaque quae
 
-
 ##########################################################
 #
 #
 ##########################################################
 video:
-    image: assets/images/video_img.png
-    subtitle: "Admission Going On"
-    title: 'Find Your Best Coach With Wellco'
-    description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudtium totam rem aperiam eaque quae'
-    image2: assets/images/video_img_2.jpg
-    youtube: 'https://www.youtube.com/watch?v=TKnufs85hXk'
+  image: assets/images/video_img.png
+  subtitle: "Admission Going On"
+  title: "Find Your Best Coach With Wellco"
+  description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudtium totam rem aperiam eaque quae"
+  image2: assets/images/video_img_2.jpg
+  youtube: "https://www.youtube.com/watch?v=TKnufs85hXk"
 
 video_quote:
-    title: 'How this works...'
-    description: 'Lory offers free consultations to assess your needs and provide a tailored mentoring plan. With flexible rates and full beginning-to-end guidance, she’ll walk you through every step of the immigration appeals process, sharing insider tips only seasoned attorneys know. Whether you’re new to appeals or looking to sharpen your skills, Lory’s expert mentorship will empower you to handle even the toughest cases with confidence. Ready to take the next step? Contact Lory today to get started!'
-    submit: "Let's get Started!"
-    image: assets/images/video_img_3.png
-    youtube: 
+  title: "How mentorship works?"
+  description: "Lory offers free consultations to assess your needs and provide a tailored mentoring plan. With flexible rates and full beginning-to-end guidance, she’ll walk you through every step of the immigration appeals process, sharing insider tips only seasoned attorneys know. Whether you’re new to appeals or looking to sharpen your skills, Lory’s expert mentorship will empower you to handle even the toughest cases with confidence. Ready to take the next step? Contact Lory today to get started!"
+  submit: "Talk to Lory"
+  image: assets/images/video_img_3.jpg
+  youtube:
 
 #####################################################
 #
@@ -1175,7 +1171,7 @@ video_quote:
 #####################################################
 what_we_know:
   count: 89
-  title: 'Learn Online Coaching Lessons For Remote'
+  title: "Learn Online Coaching Lessons For Remote"
   subtitle: " What We Know"
   image: assets/images/about/image_1.jpg
 
@@ -1189,14 +1185,14 @@ why_us_lists:
   - title: Process Emotion And Create More Energy
 
 whyus:
-    title: 'Why Lory?'
-    list1_title: 'Former BIA Board Member'
-    list1_subtitle: 'As the BIA’s dissenter in chief from xxxx to xxxx, Lory has years of inside knowledge that she puts to work to help you...'
-    list2_title: 'Long-Time Immigration Advocate/Attorney'
-    list2_subtitle: 'As the BIA’s dissenter in chief from xxxx to xxxx, Lory has years of inside knowledge that she puts to work to help you...'
-    list3_title: 'Expertise & Training in Mentorship (Certification?)'
-    list3_subtitle: 'In addition to her immigration work, Lory is also a trained/certified/experienced coach with a passion for working with attorneys and encouraging them to bring their full selves into their work.... challenging misbeliefs and transforming personal challenges into an advantage for their clients, their business, and most importantly themselves.'
-    plan_start: 'The Life Coach School Has The Most Amazing Tools And Cutting-Edge Training'
+  title: "Why Lory?"
+  list1_title: "Former BIA Board Member"
+  list1_subtitle: "As the BIA’s dissenter in chief from xxxx to xxxx, Lory has years of inside knowledge that she puts to work to help you..."
+  list2_title: "Long-Time Immigration Advocate/Attorney"
+  list2_subtitle: "As the BIA’s dissenter in chief from xxxx to xxxx, Lory has years of inside knowledge that she puts to work to help you..."
+  list3_title: "Expertise & Training in Mentorship (Certification?)"
+  list3_subtitle: "In addition to her immigration work, Lory is also a trained/certified/experienced coach with a passion for working with attorneys and encouraging them to bring their full selves into their work.... challenging misbeliefs and transforming personal challenges into an advantage for their clients, their business, and most importantly themselves."
+  plan_start: "The Life Coach School Has The Most Amazing Tools And Cutting-Edge Training"
 
 why_chose_us:
   - title: We Teach You How To Coach Yourself
@@ -1210,8 +1206,15 @@ why_chose_us:
 
 whyus2:
   subtitle: "What We Offer"
-  title: 'People Why Choose Our Coachs'
-  description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam remaperiam eaque ipsa quae abillo inventore veritatis quasi architecto'
-  description2: 'Accusantium doloremque laudantium totam rem aperiam eaque ipsa quae abillo inventore veritatis architecto'
+  title: "People Why Choose Our Coachs"
+  description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam remaperiam eaque ipsa quae abillo inventore veritatis quasi architecto"
+  description2: "Accusantium doloremque laudantium totam rem aperiam eaque ipsa quae abillo inventore veritatis architecto"
   url: "Learn More "
   url_link: about.html
+
+certificates:
+  image1: assets/images/certificate/American_Immigration_Lawyers_Association_Logo.png
+  image2: assets/images/certificate/fedbar-removebg-preview.png
+  image3: assets/images/certificate/Screenshot_2024-10-04_at_6_41_47_PM_enhanced-removebg-preview.png
+  image4: assets/images/certificate/Screenshot_2024-10-04_at_6.41.35_PM-removebg-preview.png
+  image5: assets/images/certificate/Screenshot_2024-10-04_at_6.41.42_PM-removebg-preview.png

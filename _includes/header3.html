@@ -1,82 +1,87 @@
 <header class="header header-3">
-    <div class="topbar bg-thm-color-two">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="left-side">
+  <!-- <div class="topbar bg-thm-color-two">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="left-side">
                         <p>{{ site.data.ui.admission.title }}</p>
                         <div class="countdown-timer" data-countdown="{{ site.data.ui.admission.end_time }}">
                             
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-5">
-                    <ul class="right-side">
-                        <li>
-                            <a href="tel:{{ site.data.ui.site.phone }}">
-                                <i class="fal fa-phone"></i>
-                                Call : {{ site.data.ui.site.phone }}
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:{{ site.data.ui.site.email }}">
-                                <i class="fal fa-envelope"></i>
-                                {{ site.data.ui.site.email }}
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
         </div>
+        <div class="col-lg-5">
+          <ul class="right-side">
+            <li>
+              <a href="tel:{{ site.data.ui.site.phone }}">
+                <i class="fal fa-phone"></i>
+                Call : {{ site.data.ui.site.phone }}
+              </a>
+            </li>
+            <li>
+              <a href="mailto:{{ site.data.ui.site.email }}">
+                <i class="fal fa-envelope"></i>
+                {{ site.data.ui.site.email }}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </div> -->
 
-    <div class="nav_sec">
-        <div class="container">
-            <div class="nav_warp">
-                <nav>
-                    <div class="logo">
-                        <a href="{{'/' | relative_url }}">
-                            <img src="{{ site.data.ui.site.logo | relative_url  }}" alt="logo" class="image-fit">
-                        </a>
-                    </div>
+  <div class="nav_sec">
+    <div class="container">
+      <div class="nav_warp">
+        <nav>
+          <div class="logo">
+            <a href="{{'/' | relative_url }}">
+              <img
+                src="{{ site.data.ui.site.logo | relative_url  }}"
+                alt="logo"
+                class="image-fit"
+              />
+            </a>
+          </div>
 
-                    <ul class="main-menu">
-                        {%- for menu in site.data.menus.header -%}
-                        <li class="menu-item {%- if menu.submenu -%}
+          <ul class="main-menu">
+            {%- for menu in site.data.menus.header -%}
+            <li
+              class="menu-item {%- if menu.submenu -%}
                         {{' menu-item-has-children'}}
-                            {%- endif -%}">
-                            <a href="{{menu.path}}">
-                                {{menu.label}}
-                            </a>
-                            {%- if menu.submenu -%}
-                            <ul class="sub-menu">
-                                {%- for submenu in menu.submenu -%}
-                                <li class="menu-item">
-                                    <a href="{{submenu.path}}">
-                                        {{submenu.label}}
-                                    </a>
-                                </li>
-                                {%- endfor -%}
-                            </ul>
-                            {%- endif -%}
-                        </li>
-                        {%- endfor -%}
-                    </ul>
+                            {%- endif -%}"
+            >
+              <a href="{{menu.path}}"> {{menu.label}} </a>
+              {%- if menu.submenu -%}
+              <ul class="sub-menu">
+                {%- for submenu in menu.submenu -%}
+                <li class="menu-item">
+                  <a href="{{submenu.path}}"> {{submenu.label}} </a>
+                </li>
+                {%- endfor -%}
+              </ul>
+              {%- endif -%}
+            </li>
+            {%- endfor -%}
+          </ul>
 
-                    <div class="head_actions">
-                        <a href="{{'contact' | relative_url }}" class="thm-btn bg-thm-color-three thm-color-three-shadow btn-rectangle">
-                            Enroll Now
-                            <i class="fal fa-chevron-right ml-2"></i>
-                        </a>
+          <div class="head_actions">
+            <a
+              href="{{'contact' | relative_url }}"
+              class="thm-btn bg-thm-color-three thm-color-three-shadow btn-rectangle"
+            >
+              Enroll Now
+              <i class="fal fa-chevron-right ml-2"></i>
+            </a>
 
-                        <button type="button" class="head_trigger mobile_trigger">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
-                    </div>
-                </nav>
-            </div>
-        </div>
+            <button type="button" class="head_trigger mobile_trigger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </nav>
+      </div>
     </div>
+  </div>
 </header>
