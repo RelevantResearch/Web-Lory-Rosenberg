@@ -5035,19 +5035,24 @@ blockquote .quote_author:before {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    overflow-x: auto;
-    white-space: wrap;
+    flex-wrap: nowrap; /* Ensures that all items stay in a single row */
     padding: 10px;
+    overflow: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Style for each certificate image container */
+.certificate-item {
+    flex: 1 1 auto; /* Allows images to shrink and grow proportionally */
+    margin: 0 10px; /* Adjusted margin to make more room for images */
+    max-width: calc(100% / 5); /* Limits the width to ensure all images fit */
 }
 
 /* Style for each certificate image */
-.certificate-item {
-    flex: 0 0 auto;
-    margin: 0 15px;
+.certificate-item img {
+    width: 100%; /* Ensures the image fills the available space */
+    height: auto; /* Keeps the aspect ratio */
+    max-height: 150px; /* Sets a reasonable max height for smaller screens */
+    object-fit: contain; /* Ensures the image fits within its container */
 }
 
-.certificate-item img {
-    max-height: 200px;
-    width: auto;
-    object-fit: contain;
-}
+
