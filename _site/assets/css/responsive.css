@@ -488,6 +488,7 @@
         top: 20px;
         right: 20px;
     }
+    
 
     /*testimonials*/
     .testimonial_slider .slick-dots {
@@ -580,7 +581,7 @@
 
     .why_us_box,
     .banner .image_box {
-        display: none;
+        display: block;
     }
 
     .subheader .page_title,
@@ -616,7 +617,7 @@
     .cta_box .cta_box_inner .arrows,
     .cta_box .cta_box_inner .shape_1,
     .cta_box .cta_box_inner .shape_2 {
-        display: none;
+        display: block;
     }
 
     .cta_box .cta_box_inner {

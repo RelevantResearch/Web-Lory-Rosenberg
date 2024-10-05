@@ -1,15 +1,4 @@
 <div class="banner relative z-1">
-  <img
-    src="{{'assets/images/banner/element_1.png' | relative_url}}"
-    class="element_1 img-fluid"
-    alt="Element"
-  />
-  <img
-    src="{{'assets/images/banner/element_line.png' | relative_url}}"
-    class="element_line img-fluid"
-    alt="Element Line"
-  />
-
   <div class="transform-center">
     <div class="container">
       <div class="row align-items-center">
