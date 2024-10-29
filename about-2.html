@@ -5,13 +5,19 @@ description: ""
 tags: []
 ---
 
+{% comment %} Start aside_bar {% endcomment %} {% include aside_bar.html %} {%
+comment %} End aside_bar {% endcomment %}
+
 <div class="aside-overlay trigger-left"></div>
 
-{% comment %} Start header3 {% endcomment %} {% include header3.html %} {%
-comment %} End header3 {% endcomment %} {% comment %} Start subheader2 {%
-endcomment %} {% include subheader2.html %} {% comment %} End subheader2 {%
-endcomment %} {% comment %} Start about-me {% endcomment %} {% include
-about-me.html %} {% comment %} End about-me {% endcomment %}
+{% comment %} Start subheader {% endcomment %} {% include subheader.html %} {%
+comment %} End subheader {% endcomment %}
+
+<div class="aside-overlay trigger-right"></div>
+
+{% comment %} Start header {% endcomment %} {% include header.html %} {% comment
+%} End header {% endcomment %} {% comment %} Start banner {% endcomment %} {%
+include banner.html %} {% comment %} End banner {% endcomment %}
 
 <!-- {% comment %} Start feature3 {% endcomment %}
 {% include feature3.html %}
