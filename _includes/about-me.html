@@ -1,54 +1,47 @@
-<section class="section">
-  <div class="container">
-    <div class="row align-items-center justify-content-between">
-      <!-- Image Section -->
-      <div class="col-xl-5 col-lg-6 col-md-12">
-        <div class="image_box relative z-1 text-center about_me">
+<section class="bg-thm-color-two-gradient z-1 video_quote">
+  <img
+    src="{{'assets/images/elements/element_2.png' | relative_url }}"
+    class="element_2"
+    alt="Element"
+  />
+
+  <div class="container-fluid p-0">
+    <div class="row no-gutters align-items-center">
+      <div class="col-lg-6">
+        <div class="video_warp relative z-1">
           <img
             src="{{ site.data.ui.about_me.image2 | relative_url }}"
             alt="img"
-            class="wow fadeInRight img-fluid"
+            class="image-fit image_1 img-fluid"
           />
-          <!-- Decorative Element -->
-          <img
-            src="{{'assets/images/elements/element_28.png' | relative_url }}"
-            alt="element"
-            class="element_1"
-          />
-        </div>
-      </div>
-
-      <!-- About Me Section -->
-      <div class="col-xl-5 col-lg-6 col-md-12">
-        <div class="section-title left-align wow fadeInDown">
-          <!-- You can add a section subtitle here if needed -->
-        </div>
-
-        <!-- Title -->
-        <h3 class="title">{{ site.data.ui.about_me.title }}</h3>
-
-        <!-- Description -->
-        <p class="mb-0">{{ site.data.ui.about_me.description }}</p>
-
-        <!-- List of About Me Details -->
-        <ul class="about_list style_2 mb-xl-30 wow fadeInUp">
-          {{ site.data.ui.about_me.about }}
-        </ul>
-
-        <!-- Contact Button -->
-        <div class="btn-wrapper">
           <a
-            href="{{ site.data.ui.about_me.contact_link }}"
-            class="thm-btn bg-thm-color-two thm-color-two-shadow btn-rectangle mt-3 wow fadeInDown"
+            href="{{ site.data.ui.video_quote.youtube_link }}"
+            class="popup-youtube video_btn transform-center justify-content-center d-flex style_2"
           >
-            {{ site.data.ui.about_me.contact }}
+            {{ site.data.ui.video_quote.youtube }}
           </a>
         </div>
       </div>
 
-      <!-- Include Certificate Section -->
-      {% comment %} certificate {% endcomment %} {% include certificates.html %}
-      {% comment %} End certificate{% endcomment %}
+      <div class="col-lg-6">
+        <img
+          src="{{'assets/images/elements/element_11.png' | relative_url }}"
+          class="element_4 rotate_elem"
+          alt="img"
+        />
+        <div class="quote_sec about relative z-1">
+          <img
+            src="{{'assets/images/elements/element_17.png' | relative_url }}"
+            class="element_5 rotate_elem"
+            alt="img"
+          />
+          <div class="section-title left-align wow fadeInDown">
+            <h3 class="title mb-0">{{ site.data.ui.about_me.title}}</h3>
+          </div>
+          <p>{{ site.data.ui.about_me.description }}</p>
+        </div>
+      </div>
+      {% include certificates.html %}
     </div>
   </div>
 </section>
