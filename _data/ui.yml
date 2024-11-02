@@ -1,10 +1,12 @@
 about:
-  image: assets/images/banner/family_school.jpg
-  image2: assets/images/about/image_2.jpg
+  image: assets/images/about/download-2.jpeg
+  image2: assets/images/about/shane-rounce-DNkoNXQti3c-unsplash.jpg
   subtitle:
   title: Mentoring the Next Generation of Immigration Advocates
   description: >-
-    Handling immigration appeals to the BIA and circuit courts is complex and requires specialized knowledge that many attorneys don’t have. While outsourcing the work is an option, it leaves you without the skills needed for future cases. Lory, a seasoned expert who has served on the BIA, offers personalized mentorship that empowers you to confidently manage these high-stakes cases yourself, ensuring both immediate success and long-term professional growth.
+    If you're navigating the intricacies of immigration appeals, you know these cases demand specialized expertise and resilience. Lory, a former Board of Immigration Appeals member and a dedicated coach, offers more than just answers to legal questions—she provides the mentorship you need to confidently tackle high-stakes appeals yourself.
+  description1: >-
+    With a unique approach that prioritizes both your professional growth and well-being, Lory helps you develop appellate skills while avoiding the isolation and burnout many immigration attorneys face in this difficult field. Together, you’ll build a foundation for sustainable practice, equipping you not only for today’s cases but for a fulfilling career in immigration law.
   # list1_title: Master Certified Coach
   # list1_description: Quis autem vel eum iure reprehenderit quein ea voluptate velit esse quam
   # list2_title: Coach Certification Program
@@ -1151,7 +1153,7 @@ testimonials:
 #
 ##########################################################
 video:
-  image: assets/images/video_img.png
+  image: assets/images/about/close-up-view-diverse-group-young-people-s-hands-together-around-tree-trunk-symbolizing-unity-environmentalism-322569156.jpg.webp
   subtitle: "Admission Going On"
   title: "Find Your Best Coach With Wellco"
   description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudtium totam rem aperiam eaque quae"
@@ -1187,11 +1189,11 @@ why_us_lists:
 whyus:
   title: "Why Lory?"
   list1_title: "Former BIA Board Member"
-  list1_subtitle: "As the BIA’s dissenter in chief from xxxx to xxxx, Lory has years of inside knowledge that she puts to work to help you..."
-  list2_title: "Long-Time Immigration Advocate/Attorney"
-  list2_subtitle: "As the BIA’s dissenter in chief from xxxx to xxxx, Lory has years of inside knowledge that she puts to work to help you..."
-  list3_title: "Expertise & Training in Mentorship (Certification?)"
-  list3_subtitle: "In addition to her immigration work, Lory is also a trained/certified/experienced coach with a passion for working with attorneys and encouraging them to bring their full selves into their work.... challenging misbeliefs and transforming personal challenges into an advantage for their clients, their business, and most importantly themselves."
+  list1_subtitle: "As a well-known dissenter in many influential opinions during her years on the Board of Immigration Appeals, Lory has years of rare inside legal knowledge and that she puts to work to support you and your clients."
+  list2_title: "Immigration Innovator & Consultant"
+  list2_subtitle: "Lory stays up-to-date with the state of immigration law and policy through ongoing projects devoted to legal research, the intersection of law and technology, and expanding access to legal services for immigrants."
+  list3_title: "Trainer & Certified Coach"
+  list3_subtitle: "In addition to her immigration work, Lory is a a certified coach with a passion for empowering attorneys to embrace their full potential, transforming personal challenges into strengths that benefit their clients, practice, and personal growth."
   plan_start: "The Life Coach School Has The Most Amazing Tools And Cutting-Edge Training"
 
 why_chose_us:
