@@ -329,7 +329,8 @@ body {
 }
 
 .image-fit {
-    width: 100%;
+    padding-left: 50px;
+    width: 90%;
     height: 100%;
     object-fit: cover;
     object-position: center;
