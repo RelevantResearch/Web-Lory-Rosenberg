@@ -5036,25 +5036,27 @@ blockquote .quote_author:before {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap; /* Ensures that all items stay in a single row */
+    flex-wrap: wrap; /* Allows wrapping when space is insufficient */
     padding: 10px;
     overflow: hidden; /* Prevents horizontal scrolling */
+    gap: 10px; /* Adds consistent space between items */
+    width: 100%; /* Ensure the container takes full available width */
 }
 
 /* Style for each certificate image container */
 .certificate-item {
-    flex: 1 1 auto; /* Allows images to shrink and grow proportionally */
-    margin: 0 10px; /* Adjusted margin to make more room for images */
-    max-width: calc(100% / 5); /* Limits the width to ensure all images fit */
+    flex: 0 1 calc(20% - 10px); /* 20% width with space for the gap */
+    box-sizing: border-box; /* Ensures padding and margin don't affect layout */
 }
 
 /* Style for each certificate image */
 .certificate-item img {
-    width: 100%; /* Ensures the image fills the available space */
-    height: auto; /* Keeps the aspect ratio */
-    max-height: 150px; /* Sets a reasonable max height for smaller screens */
-    object-fit: contain; /* Ensures the image fits within its container */
+    width: 100%; /* Ensure image takes up the full width of the item */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 150px; /* Limit image height */
+    object-fit: contain; /* Ensures the image fits within the container */
 }
+
 
 /* Basic button style */
 .button {
