@@ -1277,7 +1277,8 @@ blockquote .quote_author:before {
 }
 
 .header .nav_warp nav .logo img {
-    max-width: 250px;
+    width: 400px;
+
 }
 
 .header .nav_warp .main-menu {

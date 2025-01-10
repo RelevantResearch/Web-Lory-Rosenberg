@@ -133,9 +133,7 @@
         margin-right: 15px;
     }
 
-    .header .nav_warp nav .logo img {
-        max-width: 150px;
-    }
+   
 
     .header .nav_warp .main-menu>.menu-item {
         margin: 0 2px;
@@ -274,9 +272,7 @@
         display: block;
     }
 
-    .header .nav_warp nav .logo img {
-        max-width: 180px;
-    }
+   
 
     /*banner*/
     .banner {

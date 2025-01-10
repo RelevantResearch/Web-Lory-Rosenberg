@@ -316,7 +316,7 @@ body {
 
 .section {
     position: relative;
-    padding: 120px 0;
+    padding: 120px;
 }
 
 .section-padding {
@@ -329,7 +329,8 @@ body {
 }
 
 .image-fit {
-    width: 100%;
+    padding-left: 50px;
+    width: 90%;
     height: 100%;
     object-fit: cover;
     object-position: center;
@@ -1276,7 +1277,8 @@ blockquote .quote_author:before {
 }
 
 .header .nav_warp nav .logo img {
-    max-width: 250px;
+    width: 400px;
+
 }
 
 .header .nav_warp .main-menu {
@@ -5035,25 +5037,65 @@ blockquote .quote_author:before {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap; /* Ensures that all items stay in a single row */
+    flex-wrap: wrap; /* Allows wrapping when space is insufficient */
     padding: 10px;
     overflow: hidden; /* Prevents horizontal scrolling */
+    gap: 10px; /* Adds consistent space between items */
+    width: 100%; /* Ensure the container takes full available width */
 }
 
 /* Style for each certificate image container */
 .certificate-item {
-    flex: 1 1 auto; /* Allows images to shrink and grow proportionally */
-    margin: 0 10px; /* Adjusted margin to make more room for images */
-    max-width: calc(100% / 5); /* Limits the width to ensure all images fit */
+    flex: 0 1 calc(20% - 10px); /* 20% width with space for the gap */
+    box-sizing: border-box; /* Ensures padding and margin don't affect layout */
 }
 
 /* Style for each certificate image */
 .certificate-item img {
-    width: 100%; /* Ensures the image fills the available space */
-    height: auto; /* Keeps the aspect ratio */
-    max-height: 150px; /* Sets a reasonable max height for smaller screens */
-    object-fit: contain; /* Ensures the image fits within its container */
+    width: 100%; /* Ensure image takes up the full width of the item */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 150px; /* Limit image height */
+    object-fit: contain; /* Ensures the image fits within the container */
 }
 
 
-
+/* Basic button style */
+.button {
+    padding: 12px 24px;
+    background-color: #007bff; /* Button color */
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    outline: none;
+    display: inline-block;
+  }
+  
+  /* Hover effect */
+  .button:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+    transform: scale(1.05); /* Slightly enlarges on hover */
+  }
+  
+  /* Active (pressed) state */
+  .button:active {
+    background-color: #003d80; /* Even darker shade */
+    transform: scale(0.98); /* Shrinks slightly on click */
+  }
+  
+  /* Focused state for accessibility */
+  .button:focus {
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Light blue outline */
+  }
+  
+  /* Disabled state */
+  .button:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
