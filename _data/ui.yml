@@ -899,15 +899,16 @@ services:
 #
 ##############################################################
 site:
-  name: 'Wellco'
+  name: 'Lory D. Rosenberg'
   address: '256 Elizaberth Ave Str, Brooklyn, CA, 90025'
   copywrite: '© 2024 Lory D. Rosenberg. Website by <a href="https://relevant-research.com"> Relevant Research</a>.'
-  email: example@example.com
+  email: lory@loryrosenberg.com
   favicon: 'assets/images/favicon.ico'
   logo: assets/images/logo.png
-  logo2: assets/images/logo-white.png
+  logo2: assets/images/about/1695137623297.jpeg
   phone: '+012 (345) 678 99'
-  description: 'Sed ut perspiciatis unde omnis iste natus error voluptatem accan tium doloremque laudantium totam rem aperiam'
+  description: 'Expert Support for Overwhelmed Immigration Firms'
+  url: 'https://loryrosenberg.com/'
 
 ##############################################################
 #
