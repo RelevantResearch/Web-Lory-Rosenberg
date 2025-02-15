@@ -1,24 +1,22 @@
-
 ####################################
 ######     Global start     ######
 ####################################
-baseurl             : "" # the subpath of your site, e.g. /blog
-url                 : "https://wellco-jekyll.netlify.app" #  7277783  the base hostname & protocol for your site, e.g. http://example.com
-locale              : "en_US"
+baseurl: '' # the subpath of your site, e.g. /blog
+url: 'https://loryrosenberg.com/' #  7277783  the base hostname & protocol for your site, e.g. http://example.com
+locale: 'en_US'
 
 author:
-  name: ducor
+  name: Lory Rosenberg
 
 # paginate
 paginate: 6
-paginate_path: "/blog/page:num/"
+paginate_path: '/blog/page:num/'
 
 keep_files:
   - .git
   - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
+encoding: 'utf-8'
+markdown_ext: 'markdown,mkdown,mkdn,mkd,md'
 
 # Conversion
 markdown: kramdown
@@ -26,7 +24,6 @@ highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
-
 
 # Markdown Processing
 kramdown:
@@ -52,17 +49,16 @@ collections:
 defaults:
   # _posts
   - scope:
-      path: "_posts"
+      path: '_posts'
       type: posts
     values:
       layout: post
   # _pages
   - scope:
-      path: "" # we can not defile path /blog/index.html for pagination
+      path: '' # we can not defile path /blog/index.html for pagination
       type: pages
     values:
       layout: page
-
 
 timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -114,8 +110,7 @@ jekyll-archives:
 # Ajax Contact form
 # go to https://formspree.io/ for signup
 #
-formspree_id: 'mrgdpbok' 
-
+formspree_id: 'mrgdpbok'
 
 # mailchimp SUBSCRIVE FORM
 mailchimp:
@@ -124,34 +119,34 @@ mailchimp:
   username: 'jekylltemplate.us5'
 
 ## leaflet map
-map: 
- lat: "40.7128"
- lng: '-74.0060'
+map:
+  lat: '40.7128'
+  lng: '-74.0060'
 
 # SEO Related
-google_site_verification : ''
-bing_site_verification   : ''
-yandex_site_verification : ''
-naver_site_verification  : ''
+google_site_verification: ''
+bing_site_verification: ''
+yandex_site_verification: ''
+naver_site_verification: ''
 
 # Social Sharing
 twitter:
-  username               : ''
+  username: ''
 facebook:
-  username               : ''
-  app_id                 : ''
-  publisher              : ''
-og_image                 :  '/assets/Wellco_Preview.png' # Open Graph/Twitter default site image
+  username: ''
+  app_id: ''
+  publisher: ''
+og_image: 'assets/images/about/1695137623297.jpeg' # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : '' # Person or Organization (defaults to Person)
-  name                   : '' # If the user or organization name differs from the site's name
+  type: '' # Person or Organization (defaults to Person)
+  name: '' # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider: false # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : ''
-    anonymize_ip         : true # true, false (default)
+    tracking_id: ''
+    anonymize_ip: true # true, false (default)
